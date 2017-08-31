@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8" />
     <title>新用户注册</title>
+    <style type="text/css">
+        .fl{float: left;}
+        .fr{float: right;}
+
+        .Registertopmain{border-bottom: #ddd solid 1px;}
+        .Registertop{padding: 30px 0;}
+        .w1100{width: 1100px;}
+        .ct{margin: 0 auto;}
+        .overflow{overflow: hidden;}
+    </style>
 </head>
 <body>
     <div class="overflow bgwhite registertopmain">
-        <div class="overflow wl100 ct registertop">
+        <div class="overflow w1100 ct Registertop">
             <div class="overflow fl">
                 <a href="#" target="_blank">
                     <img src="../img/register_img/cart-logo.png" alt="" />
@@ -15,8 +25,31 @@
                     <img src="../img/register_img/welcome2register.jpg" alt="" />
                 </span>
             </div>
-            <div class="overflow fr Logonfr"></div>
+            <div class="overflow fr Logonfr">
+                <span class="c666 ft14">已有账号？</span>
+                <a href="#" target="_blank" class="ft16 Logon">登录</a>
+            </div>
         </div>
+    </div>
+    <div class="bgwhite Registertopmain">
+        <form method="post" action="/epet_register.html" id="regform">
+            <input type="hidden" name="do" value="postSubmit" />
+            <input type="hidden" name="inajax" value="1" />
+            <input type="hidden" name="formhash" value="f2919f1dbc" />
+            <input type="hidden" name="postsubmit" value="true" />
+            <input type="hidden" name="referer" id="referer" value="#" />
+            <div class="overflow w1100 ct Registercontent">
+                <div class="ct Registertext" id="register">
+                    <div class="rela mb Registerinput">
+                        <span class="ft16 textright inblock">手机号：</span>
+                        <input type="text" tabindex="1" name="phone" id="phone" placeholder="请输入手机号码" class="phonenumbererror" />
+                        <div class="abs Registerok" id="phonemsg_img" style="display: none;">
+                            <img src="../img/register_img/rg_ok_01.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 </body>
 </html>
