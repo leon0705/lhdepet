@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://passport.epet.com/login.html?referer=http://www.epet.com -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>登录中心</title>
+    <link rel="stylesheet" type="text/css" href="./../css/login.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/style.css" />
+<body class="bgwhite"><iframe src="javascript:false;" style="display: none;" src="./登录中心_files/saved_resource.html"></iframe><div id="nTalk_post_hiddenElement" style="left: -10px; top: -10px; visibility: hidden; display: none; width: 1px; height: 1px;"></div>
+<div class="overflow bgwhite Registertopmain">
+    <div class="overflow w1100 ct Registertop">
+        <div class="overflow fl">
+            <a href="http://www.epet.com/" target="_blank"><img src="./../img/login/cart-logo.png"></a>
+        </div>   
+        <div class="overflow fr Logonfr Loginlink">
+            <a href="http://www.epet.com/brandsale/main.html" class="ft14 c666 inblock" target="_blank">品牌特卖</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.epet.com/brand/main.html" class="ft14 c666 inblock" target="_blank">试用中心</a>
+        </div>
+    </div>
+</div><div  id="logbg" class=" bgwhite rela Loginpmain logbg " >
+<!-- 随机背景图插件 -->
+<script type="text/javascript">
+    //<!CDATA[
+        var bodyBgs = [];
+        bodyBgs[0] = "./../img/login/login_bg0.jpg";
+        bodyBgs[1] = "./../img/login/login_bg1.jpg";
+        bodyBgs[2] = "./../img/login/login_bg2.jpg";
+        bodyBgs[3] = "./../img/login/login_bg3.jpg";
+
+        var randomBgIndex = Math.round( Math.random() * 3 );
+    //输出随机的背景图
+        document.getElementById(
+            "logbg").style.background="url("+ bodyBgs[randomBgIndex] +")no-repeat center";
+    //]]>
+</script>
+    <div class="overflow abs ct w1100 Loginbg">
+                <form action="https://passport.epet.com/login.html?do=postSubmit" method="post" id="login_form">
+            <input type="hidden" name="formhash" value="36ce8554e2">
+            <input type="hidden" id="referer" name="referer" value="http%3A%2F%2Fwww.epet.com">
+            <input type="hidden" name="inajax" value="1">
+            <input type="hidden" name="postsubmit" value="true">
+            <input type="hidden" name="error" value="">
+            <input type="hidden" value="kM5YHKC5cheC55NM">
+            <input type="hidden" name="decrypt" value="true">
+            <input type="hidden" name="login_fromway" value="1">
+            <input type="hidden" value="" name="imgkey">
+            <div class="abs Logindiv70" id="logdiv">
+                <div class="overflow Longintab">
+                    <span data-id="0" name="logintype" class="fl ftc ft14 c999 block Logindefalut">普通登录</span>
+                    <span data-id="1" name="logintype" class="fl ftc ft14 c999 block">手机动态密码登录</span>
+                </div>
+                <div class="overflow Logoincontent  " id="logininput">
+                    <div id="Login_0" style="display: block;">
+                        <div class="overflow Loginuser">
+                            <span class="inblock Loginico Uderico"></span>
+                            <input class="ft14 c999 Userinput" type="text" name="usernamel" id="usernamel" value="" placeholder="手机号/邮箱/用户名" autocomplete="on">
+                        </div>
+                        <div class="overflow Loginuser">
+                            <span class="inblock Loginico Uderico Pwdico"></span>
+                            <input class="ft14 c999 Userinput logpass" type="password" autocomplete="new-password" name="passwordl" id="passwordl" value="" placeholder="密码">
+                        </div>
+                        <div class=" overflow mt20 Yanzheng" id="Yanzhegnmaimg">
+                            <p>
+                                <span class="c333">请点击下方所有是<span id="varifyName">狗</span>的图片，进行验证</span>
+                                <a class="Refren block fr" href="javascript:void(0);" onclick="getVarifyImg()">
+                                    <span class="inblock Uderico Rrefrenico"><img id="xuanzhuan" style="margin: 0;padding: 0;border: none;position: absolute;" src="./登录中心_files/renfren_03.jpg"></span>换一组
+                                </a>
+                            </p>
+                            <div class="overflow Yanzhegnmaimg">
+                                <ul class="yzm_img_ul">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--手机动态密码登录 BEGIN-->
+                    <div class="overflow Logoincontent" id="Login_1" style="display: none;">
+                        <div class="overflow Loginuser">
+                            <span class="inblock Loginico Uderico phoneico"></span>
+                            <input class="ft14 c999 Userinput" type="text" name="mobelphonel" id="" value="" placeholder="已注册的手机号">
+                        </div>
+                        <div class="overflow Loginuser varify">
+                            <span class="inblock Loginico Uderico varifyico"></span>
+                            <input class="ft14 c999 Userinput" style="width: 150px;" type="text" autocomplete="off" name="varify" id="" value="" placeholder="验证码">
+                        </div>
+                        <div class="varifyimg">
+                            <img src="./登录中心_files/seccode.html" id="varifyimglog" class="codevar" onclick="freshcode($(&#39;#varifyimglog&#39;),100,47,&#39;login_seccode&#39;)" title="看不清?换一张" align="absbottom">
+                        </div>
+                        <div class="overflow Loginuser logphonecode">
+                            <span class="inblock Loginico Uderico codeico"></span>
+                            <input class="ft14 c999 Userinput" style="width: 150px;" type="text" id="dt_password" name="dt_password" autocomplete="off" value="" placeholder="动态码">
+                        </div>
+                        <div class="overflow Loginuser phonecodebtn" id="phonecodebtnlogin" onclick="send_Phonecode(&#39;login&#39;)">
+                            <span>获取动态密码</span>
+                        </div>
+                    </div>
+                    <!--手机动态密码登录 END-->
+                </div>
+                <div class="overflow mt20 Logintext">
+                    <input type="checkbox" checked="checked" name="autologin" id="" value="true">
+                    <span class="ft14 c666">自动登录</span>
+                    <a href="https://passport.epet.com/retrieve_password.html?referer=%20http%3A%2F%2Fwww.epet.com" target="_blank" class="block fr ft14 c666">忘记密码?</a>
+                </div>
+                <input type="submit" class="hide_submit" onclick="return false;">
+                <a href="javascript:void(0)" class="inblock Loginbtn cwhite ft20 ftc " id="loginbtn" onclick="logsubmit();">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+                <div class="overflow Hezuo">
+                    <div class="overflow fl">
+                        <span class="ft14 c666">合作网站登录:</span>
+                        <div class="overflow mt Heuzouicolist">
+                            <a href="https://passport.epet.com/Oauth.html?type=3&amp;returnurl=http%3A%2F%2Fwww.epet.com" class="inblock Loginico Uderico Weixinico"></a>
+                            <a href="https://passport.epet.com/Oauth.html?type=2&amp;returnurl=http%3A%2F%2Fwww.epet.com" class="inblock Loginico Uderico Qqico"></a>
+                            <a href="https://passport.epet.com/Oauth.html?type=4&amp;returnurl=http%3A%2F%2Fwww.epet.com" class="inblock Loginico Uderico Zhifuico"></a>
+                            <!--<a href="http://passport.epet.com/synlogin/alipay.html?returnurl=http%3A%2F%2Fwww.epet.com" class="inblock Loginico Uderico Zhifuico"></a>-->
+                            <!--<a href="https://passport.gutou.com/oauth/weibo.html?returnurl=http%3A%2F%2Fwww.epet.com" class="inblock Loginico Uderico Huofuuico"></a>-->
+                        </div>
+                    </div>
+                    <a href="./epet_register.html" class="block fr ft14 c666">注册账号</a>
+                </div>
+                <div class="qrCodeBox abs">
+                    <img class="qrCodeImg" src="./../img/login/qrcode.png">
+                    <p class="newer">领取188元新人礼包</p>
+                    <p class="download">下载APP注册新人专享1元爆款</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="overflow bgwhite">
+    <div class="overflow ct Registerfooter ftc">
+        <a class="c999" href="http://www.epet.com/" target="_blank">E宠商城  |</a>
+        <a class="c999" href="http://zs.epet.com/" target="_blank">知识  |</a>
+        <a class="c999" href="http://www.epet.com/article/about.html" target="_blank">关于我们  |</a>
+        <a class="c999" href="http://www.epet.com/article1643.html" target="_blank">联系我们 </a>
+        <p class="c999 ftc">渝ICP备13005525号-2 &nbsp; 渝ICP备 10002905 &nbsp;增值电信业务经营许可证：渝B2-20140042 &nbsp; Copyright © 2007-2016 epet.com &nbsp;重庆易宠科技有限公司</p>
+    </div>
+</div>
+<div id="jsconfig"></div>
+<div id="fireworks" data-name="fireworks"></div>
+</body></html>

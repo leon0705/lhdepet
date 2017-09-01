@@ -405,7 +405,7 @@ a.txwei{ background-position:-468px -77px;}
 .rss_btn{ width:83px; height:21px; background-position:-334px -43px; margin-top:2px;}
 
 .logo{height: 94px; width:268px;}
-.logo a.lo{ display: inline-block; width: 268px; height: 94px; background: url(images/epet/epet-logo.png?v=1) no-repeat 0px -12px; margin-top: 7px;}
+.logo a.lo{ display: inline-block; width: 268px; height: 94px; background: url(./../img/index_img/epet-logo.png) no-repeat 0px -12px; margin-top: 7px;}
 .logo button{width: 250px;height: 90px;border: none;margin: 0;padding: 0;cursor: pointer;line-height: 0;font-size: 0;background: none;outline: none;}
 .header{ padding-top:33px;height:100px; position:relative; z-index:900;*+z-index:0;/*z-index:0\0;*/}
 .search{ margin:23px 0 0 33px;}
@@ -414,7 +414,7 @@ a.txwei{ background-position:-468px -77px;}
 .search button:hover{ box-shadow:0 0 8px rgba(0,0,0,0.3);}
 .adepet{ overflow:hidden; position:relative;*+z-index:-1;}
 .phonecode{ background-position:0 -521px; height:22px; width:144px; margin: 30px 0 0 40px;}
-.go-buy{margin: 23px 0 0 0; width: 130px; height: 39px;  text-align: center; text-indent: 2em; background: url(images/epet/shopping-cart.gif) no-repeat;}
+.go-buy{margin: 23px 0 0 0; width: 130px; height: 39px;  text-align: center; text-indent: 2em; background: url(./../img/index_img/shopping-cart.gif) no-repeat;}
 .go-buy a{line-height: 39px;}
 .go-buy em{ display: inline-block; vertical-align: middle; margin-top: -4px; color: #f40; text-indent: 0; margin-left: 2px;}
 .maincates{float: left;width: 228px;}
