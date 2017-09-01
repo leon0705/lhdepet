@@ -168,9 +168,23 @@ table{border-collapse:collapse;empty-cells:show}
 .ell{text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 
 
+/*轮播图*/
+#indexbox{width:770px;height:360px;margin:0 auto;overflow: hidden;}
+#indexpics{width: 3200px;}
+/*main_rBox*/
+.main_rBox {width: 100%;position: absolute;left: 0;top: 0;height: 0;}
+.main_r div:hover img {margin-left: -12px;}
+.main_r div img {
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -ms-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
 
-
-
+/*每日疯抢*/
+.count-down {width: 328px;height: 460px;background: url(./../img/index_img/everydayBg.png) no-repeat;background-size: 100% 100%;
+}
 
 
 .tancbox{ border-top:1px solid #ddd; border:1px solid #ddd; padding:15px;}
