@@ -1,0 +1,132 @@
+/* 
+* @Author: Marte
+* @Date:   2017-09-05 16:00:32
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-05 20:57:56
+*/
+*{
+    margin: 0;
+    padding: 0;
+    word-wrap:break-word;
+}
+img{
+    border:0;
+}
+b, h1, h2, h3 {
+    font-weight: 400;
+}
+ol, ul ,li{list-style: none;} 
+div{display:block;}
+a{text-decoration:none;color:#444;}
+i, em {
+    font-style: normal;
+}
+img,a img{border:0;}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, i, b {
+    margin: 0;
+    padding: 0;
+    font: 12px 'Microsoft Yahei',Tahoma,Simsun;
+}
+.header_topri li i, .weibo a, .rss_btn, .cartbtn, .fuwu ul li span, .paim_box, .hot_name i, .footer p a, .lis_plbox, .close, .epetbrand, .close-code, .zt-list1-1 li a:hover, .zt-list1-1 li.this a, .phonecode, .saving {
+    background-image: url(./../img/index_img/bg.png);
+    background-repeat: no-repeat;
+}
+.topgz_act, .myec_tc a, .o-more b {
+    background-image: url(./../img/index_img/bg2.png);
+    background-repeat: no-repeat;
+}
+a:link,a:visited{outline:0;}
+.nav {background: #fff;padding-top: 10px;border-bottom: #357e34 solid 2px}
+
+.fl{float:left;}
+.fr{float:right;}
+.ft12{font-size:12px;}
+.ft13{font-size:13px;}
+.ft14{font-size:14px;}
+.ft15{font-size:15px;}
+.ft16{font-size:16px;}
+.ft18{font-size:18px;}
+.ft20{font-size:20px;}
+.ft24{font-size:24px;}
+.ft26{font-size:26px;}
+.ft30{font-size:30px;}
+.c999{color:#999;}
+.c666{color:#666;}
+.clearfix{}
+.clear{clear:both;}
+.ct{margin:0 auto;}
+.cf60{color:#f60;}
+.w-max{width:1200px;}
+.rela,.rel{position:relative;}
+.abs{position:absolute;}
+.pdl40{padding-left:40px;}
+.hide,.shide{display:none;}
+.clearfix::after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+
+/*headertop*/
+.place-send{margin-top:7px;}
+.headerTop{height:28px;border-bottom:1px solid #ddd;background:#f5f5f5;position:relative;z-index:1002;}
+.headerTop li,.headerTop p{line-height:25px;color:#444;}
+.header_tl p{padding:0 5px;float:left;line-height:28px;}
+
+.epet-index-brand{background:url(./../img/index_img/epetbrand.png) no-repeat;background-position:0 8px;display:inline-block;width:75px;height:29px;line-height:29px;text-indent:16px;}
+.epetbrand:link,.epetbrand:visited{color:#666;}
+.epetbrand{display:inline-block;width:95px;height:21px;line-height:20px;text-indent:28px;background-position:0 -429px;margin-top:4px;}
+.main-place-div{height:28px;}
+
+.cred{color:red;}
+.header_topri{width:700px;padding-top:1px;}
+.header_topri li{display:inline;float:right;padding:0 5px;height:26px;position:relative;z-index:120;border:1px solid #f5f5f5;border-bottom:0;}
+.header_topri li i{width:13px;height:13px;background-position:-312px -46px;background-repeat:no-repeat;margin-top:6px;margin-right:5px;float:left;}
+.header_topri li img{margin-top:2px;}
+.header_topri li.mobileApp i{background-position: -334px -46px;}
+.header_topri li.mobileApp:hover img{display:block;}
+.header_topri li#cart-t i{background-position:-291px -46px;width:14px;height:14px;}
+.header_topri li em{color:red;}
+
+.dropmn .topgz i{background-position:-353px -46px;width:15px;margin-right:4px;}
+.topgz{position:relative;padding-right:14px;cursor:pointer;display:block;}
+.topgz b {display: block;width: 0;height: 0;border: transparent solid 4px;border-top: #717171 solid 4px;position: absolute;right: 0;top: 10px;overflow: hidden;}
+
+.myec_tc{border: 1px solid #ddd;border-top: 0;position: absolute;left: -1px;top: 26px;float: left;padding: 5px 10px;display: none;background-color: #FFF;}
+.myec_tc a {line-height: 14px;padding: 0 10px;width: 60px;margin-bottom: 10px;background-position: 0 -260px;display: block;}
+
+/*head*/
+.logo{height:94px;width:268px;}
+.logo a.lo {display: inline-block;width: 268px;height: 94px;background: url(./../img/index_img/epet-logo.png) no-repeat 0 -12px;margin-top: 7px;}
+.search{margin:23px 0 0 33px;}
+.search input {border: #459d36 solid 2px;background: 0 0;padding: 0 5px 0 15px;width: 382px;height: 30px;outline: 0;line-height: 30px;font-size: 14px;float: left;
+}
+.search button {border: 0;width: 73px;height: 34px;vertical-align: top;cursor: pointer;background-color: #459d36;color: #FFF;font-size: 14px;}
+.sch_list {position: absolute;border: 2px #459d36 solid;width: 338px;background: #F4F4EE;margin: 32px 0 0;
+}
+
+.keywords {margin: 10px 0;width: 498px;height: 17px;overflow: hidden;}
+.keywords a, .keywords span, .keywords label {float: left;display: inline;white-space: nowrap;color: #999;}
+.keywords a.cred {color: red;}
+.keywords span {color: #999;margin: 0 10px;}
+
+.phonecode {background-position: 0 -521px;height: 22px;width: 144px;margin: 30px 0 0 40px;}
+.catsha-tell {font-size: 14px;font-weight: 700;padding-top: 25px;width: 220px;margin: 30px 0 0 40px;}
+
+.go-buy {margin: 23px 0 0;width: 130px;height: 39px;text-align: center;text-indent: 2em;background: url(./../img/index_img/shopping-cart.gif) no-repeat;}
+.go-buy a {line-height: 39px;}
+.go-buy em {display: inline-block;vertical-align: middle;margin-top: -4px;color: #f40;text-indent: 0;margin-left: 2px;}
+
+/*nav*/
+.nav{border-bottom:0;}
+.navBox {position: relative;}
+.mchov {position: relative;z-index: 1001;}
+.maincates {float: left;width: 228px;}
+.maincates-title {height: 34px;line-height: 32px;color: #FFF;font-size: 16px;text-align: center;}
+.maincates-title span {float: left;width: 112px;height: 32px;text-align: center;border: 1px solid #e1e1e1;color: #666;cursor: pointer;}
+.maincates-title span.epet-type {position: relative;}
+.maincates-title .cate1 {width: 16px;height: 13px;background-position: -17px -1257px;}
+
+.maincates-title b {display: inline-block;vertical-align: middle;margin-top: -2px;background: url(./../img/index_img/bg2.png);margin-left: 5px;}
+.maincates-title .cate2 {width: 13px;height: 7px;background-position: -17px -1276px;}
+.maincates-title .hov .cate2{background-position: 0 -1276px;}
+
+.menus li {float: left;display: inline;z-index: 102;position: relative;}
+.menus a.mns, .menus a.mns:visited {float: left;display: inline;line-height: 34px;font-size: 16px;color: #000;font-weight: 700;padding: 0 25px;text-decoration: none;outline: 0;height: 34px;}
+.menus a.mns b {display: inline-block;width: 13px;height: 17px;background: url(./../img/index_img/bg2.png) -35px -1280px;vertical-align: middle;margin-top: -2px;margin-right: 6px;}
