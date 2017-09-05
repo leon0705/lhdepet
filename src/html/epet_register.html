@@ -23,6 +23,7 @@
         </div>
     </div>
     <!-- 注册表单 -->
+
     <div class=" bgwhite Registertopmain">
         <form method="post" action="" id="regform">
             <input type="hidden" name="do" value="postSubmit">
@@ -157,7 +158,7 @@
                         <input tabindex="7" type="checkbox" checked="checked" name="agrement">
                         <span class="Xieyi ft14">我已阅读并接受E宠<a href="http://www.epet.com/article37.html" target="_blank">《用户使用协议》</a></span>
                     </div>
-                    <a class="inblock ct ftc ft20 cwhite  Otherregister" id="registerbtn" name="registerbtn" style="cursor: pointer;margin: 15px 0 50px 100px;" onclick="">立即注册</a>
+                    <button class="inblock ct ftc ft20 cwhite  Otherregister" id="registerbtn" name="registerbtn" style="cursor: pointer;margin: 15px 0 50px 100px;" onclick="">立即注册</button>
                 </div>
             </div>
         </form>
@@ -172,6 +173,47 @@
             <p class="c999 ftc">渝ICP备13005525号-2 &nbsp; 渝ICP备 10002905 &nbsp;增值电信业务经营许可证：渝B2-20140042 &nbsp; Copyright © 2007-2016 epet.com &nbsp;重庆易宠科技有限公司</p>
         </div>
     </div>
+    
+    <!-- 验证用户名是否存在 -->
+    <!-- 先后顺序有问题bug -->
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            /*
+                验证用户名是否被占用
+             */
+            var nickname = document.querySelector('#nickname');
+            var passwordr = document.querySelector('#passwordr');
+            var nickname_msg = document.querySelector('#nickname_msg');
+            var nickname_msg_div = document.querySelector('#nickname_msg_div');
+            var nickname_img = document.querySelector('#nickname_img');
+            var registerbtn = document.querySelector('#registerbtn');
+
+            nickname.onblur = function(){
+                var _nickname = nickname.value;
+
+                // 1.创建一个异步请求对象
+                var xhr = new XMLHttpRequest();
+
+                // 4.处理数据
+                xhr.onreadystatechange = function(){
+                    if(xhr.readyState === 4){
+                        var res = xhr.responseText;
+                        console.log(res);
+                        if(res === 'fail'){
+                            nickname_msg_div.style.display = 'block';
+                            nickname_msg.innerHTML = '用户名已被注册';
+                        }else{
+                            nickname_msg_div.style.display = 'none';
+                            nickname_img.style.display = 'block';
+                        }
+                    }
+                }
+
+                xhr.open('get','http://localhost/gz1704/src/mysql/reg.php?nickname='+_nickname,true);
+                xhr.send();
+            }
+        })
+    </script>
     <script src="./../js/epet_register/qiangdu.js"></script>
     <script src="./../js/epet_register/verify.js"></script>
     <script src="./../lib/jquery-1.12.1.min.js"></script> 
