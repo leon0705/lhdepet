@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <title>epet</title>
     <link rel="stylesheet" type="text/css" href="./css/new_index.css" />
+    <script src="lib/jquery-3.2.1.js"></script>
 </head>
 <body>
     <!-- 头部 -->
-    <div class="headerTop pdl40 ft12">
+    <div class="headerTop pdl40 pr100 ft12">
         <div class="header_tl">
             <p class="clearfix pdl40"></p>
             <p><a href="" class="epet-index-brand">E宠首页</a></p>
@@ -146,11 +147,930 @@
     <div class="adepet clear">
         <div class="indexlbox">
             <div class="indexmidpic">
-                
+                <div class="lh_carousel">
+                    <ul class="pic">
+                        <li class="ct wmx"><img src="./img/index_img/banner_t1.jpg@!water" alt="pic1" /></li>
+                        <li class="ct wmx"><img src="./img/index_img/banner_t2.jpg@!water" alt="pic2" /></li>
+                        <li class="ct wmx"><img src="./img/index_img/banner_t3.jpg@!water" alt="pic3" /></li>
+                        <li class="ct wmx"><img src="./img/index_img/banner_t4.jpg@!water" alt="pic4" /></li>
+                        <li class="ct wmx"><img src="./img/index_img/banner_t4.jpg@!water" alt="pic5" /></li>
+                    </ul>
+                </div>
+                <div class="playpic">
+                    <a href="###" alt="1" class="">1</a>
+                    <a href="###" alt="2" class="">2</a>
+                    <a href="###" alt="3" class="">3</a>
+                    <a href="###" alt="4" class="">4</a>
+                    <!-- <a href="###" alt="6" class="">6</a> -->
+                </div>
             </div>
         </div>
-        <div class="main_rBox"></div>
+        <script src="js/index/banner.js"></script>
+        <div class="main_rBox">
+            <div class="w-max ct">
+                <div class="fr main_r">
+                    <div><a href="" style="height:119px;" target="_blank" class="imgBox ibotline"><img src="./img/index_img/dog_main_r1.png@!water" alt="" /></a></div>
+                    <div><a href="" style="height:119px;" target="_blank" class="imgBox ibotline"><img src="./img/index_img/dog_main_r2.jpg@!water" alt="" /></a></div>
+                    <div><a href="" style="height:120px;" target="_blank" class="imgBox"><img src="./img/index_img/dog_main_r3.jpg@!water" alt="" /></a></div>
+                </div>
+            </div>
+        </div>
         <div class="clear"></div>
     </div>
+    <!-- 购物列表 -->
+    <div class="renew w-max ct overflow">
+        <div class="day-superise clearfix mt30" data-name="daySurprise">
+            <div class="fl count-down">
+                <div class="surprise-time">
+                    <div class="surprise-tit ftc mt20 pt20"></div>
+                    <div class="cfff ftc ft14 end-time">距下一场开始还有</div>
+                    <div class="time ftc mt15">
+                        <div class="time1 dib clearfix ft14">
+                            <span id="times0"></span>
+                            <span id="t0" style="display:none;" name="1"></span>
+                        </div>
+                    </div>
+                    <div class="ftc this-time bold cfff mt20">
+                        <div class="dib">
+                            <span class="dib index-ico ml5"></span>
+                        </div>
+                    </div>
+                    <div class="ftc ft20 mt5 cfff"></div>
+                </div>
+            </div>
+            <div class="fr surprise-con border ">
+                <div class="anli rela">
+                    <div class="anlimenu">
+                         <div class="time-menu rela overflow">
+                             <ul class="menubox yyyy clearfix" style="width: 833px; left: 0px;">
+                                 <li class="fl timemove on"><div class="ftc dib rela"><p class="time">09:00</p><p>即将开始</p><i></i></div></li>
+                                 <li class="fl timemove"><div class="ftc dib rela"><p class="time">11:00</p><p>即将开始</p><i></i></div></li>
+                                 <li class="fl timemove"><div class="ftc dib rela"><p class="time">14:00</p><p>即将开始</p><i></i></div></li>
+                                 <li class="fl timemove"><div class="ftc dib rela"><p class="time">16:00</p><p>即将开始</p><i></i></div></li>
+                                 <li class="fl timemove"><div class="ftc dib rela"><p class="time">20:00</p><p>即将开始</p><i></i></div></li>
+                                 <li class="fl timemove"><div class="ftc dib rela"><p class="time">22:00</p><p>即将开始</p><i></i></div></li>
+                                 <li class="fl timemove"><div class="ftc dib rela"><p class="time">明日</p><p>预告</p><i></i></div></li>
+                                 <input type="hidden" class="num" value="">
+                             </ul>
+                         </div>
+                    </div>
+                    <a class="timeleft dib left_2 index-ico pointer" style="display: none;"></a>
+                    <a class="timeright dib right_2 index-ico pointer" style="display: none;"></a>
+                </div>
+                <div class="anli rela time-procondiv">
+                    <div class="time-proconli rela overflow"></div>
+                    <a href="" class="timeproleft dib left_1 index-icon pointer" style="display: inline;"></a>
+                    <a href="" class="timeproright dib right_1 index-icon pointer" style="display: inline;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="epetfoodblock mt30">
+            <div class="epetfood-tit ft20 c333 pb10">
+                <i class="index-ico cate_5 dib fl mr5"></i>
+                狗狗主粮
+            </div>
+            <div class="clearfix">
+                <div class="fl ad-img3 rela overflow">
+                    <a href=""><img src="./img/index_img/81382c5f5479c1fe1db45444c9b6a1b1.jpg@!water" alt="" /></a>
+                    <div class="stylebg abs overflow">
+                        <div class="hotkind clearfix c666 overflow">
+                            <span class="fl overflow">——————————————————</span>
+                            <i class="fl dib ml index-ico"></i>
+                            <b class="fl c666 ft14 mr15 dib ml5 mt5">最热HOT</b>
+                            <span class="fl overflow">——————————————————</span>
+                        </div>
+                        <ul class="clearfix kind-name mt overflow">
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">麦德琳</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">美士</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">活的益生菌</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">天然蓝氏</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">K9Natural</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">安娜玛特</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">回归原野</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">雷米高</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">95%含肉量</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fr rela epetfood-pro">
+                    <div class="lib-menu textR abs overflow">
+                        <ul class="clearfix dib ftc">
+                            <li id="one1" onmouseenter="setTab('one',1,5, 0)" class="fl bgwhite pointer hover"><div class="border-t"><span>热门</span></div></li>
+                            <li id="one2" onmouseenter="setTab('one',2,5, 7)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/7.html" class="db"><div class="border-t"><span>进口狗粮</span></div></a></li>
+                            <li id="one3" onmouseenter="setTab('one',3,5, 3555)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/3555.html" class="db"><div class="border-t"><span>国产狗粮</span></div></a></li>
+                            <li id="one4" onmouseenter="setTab('one',4,5, 78)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/78.html" class="db"><div class="border-t"><span>散装狗粮</span></div></a></li>
+                            <li id="one5" onmouseenter="setTab('one',5,5, 3554)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/3554.html" class="db"><div class="border-t"><span style="border-right: 0px;">处方狗粮</span></div></a></li>
+                        </ul>
+                    </div>
+                    <div class="lib_conbox"></div>
+                </div>
+
+            </div>
+            <ul class="clearfix brands-ul">
+                <li class="fl"><a target="_blank" href=""><img src="./img/index_img/92371ab34de0ea12b67028d6625c5180.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/18/14/aa9949e953c28d3570f45c8140659f92.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/dc6dfe16b53030f17b93bce641f02cfd.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/df53f688c929176398c114b9a9b2b903.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/1c0f3d0e888dfc347199f1fab46331f6.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/3fda73b587cffac6d43fe2bf92511b0e.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg@!water"></a></li>
+            </ul>
+        </div>
+        <div class="epetfoodblock mt30">
+            <div class="epetfood-tit ft20 c333 pb10">
+                <i class="index-ico cate_5 dib fl mr5"></i>
+                狗狗主粮
+            </div>
+            <div class="clearfix">
+                <div class="fl ad-img3 rela overflow">
+                    <a href=""><img src="./img/index_img/81382c5f5479c1fe1db45444c9b6a1b1.jpg@!water" alt="" /></a>
+                    <div class="stylebg abs overflow">
+                        <div class="hotkind clearfix c666 overflow">
+                            <span class="fl overflow">——————————————————</span>
+                            <i class="fl dib ml index-ico"></i>
+                            <b class="fl c666 ft14 mr15 dib ml5 mt5">最热HOT</b>
+                            <span class="fl overflow">——————————————————</span>
+                        </div>
+                        <ul class="clearfix kind-name mt overflow">
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">麦德琳</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">美士</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">活的益生菌</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">天然蓝氏</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">K9Natural</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">安娜玛特</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">回归原野</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">雷米高</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">95%含肉量</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fr rela epetfood-pro">
+                    <div class="lib-menu textR abs overflow">
+                        <ul class="clearfix dib ftc">
+                            <li id="one1" onmouseenter="setTab('one',1,5, 0)" class="fl bgwhite pointer hover"><div class="border-t"><span>热门</span></div></li>
+                            <li id="one2" onmouseenter="setTab('one',2,5, 7)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/7.html" class="db"><div class="border-t"><span>进口狗粮</span></div></a></li>
+                            <li id="one3" onmouseenter="setTab('one',3,5, 3555)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/3555.html" class="db"><div class="border-t"><span>国产狗粮</span></div></a></li>
+                            <li id="one4" onmouseenter="setTab('one',4,5, 78)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/78.html" class="db"><div class="border-t"><span>散装狗粮</span></div></a></li>
+                            <li id="one5" onmouseenter="setTab('one',5,5, 3554)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/3554.html" class="db"><div class="border-t"><span style="border-right: 0px;">处方狗粮</span></div></a></li>
+                        </ul>
+                    </div>
+                    <div class="lib_conbox"></div>
+                </div>
+
+            </div>
+            <ul class="clearfix brands-ul">
+                <li class="fl"><a target="_blank" href=""><img src="./img/index_img/92371ab34de0ea12b67028d6625c5180.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/18/14/aa9949e953c28d3570f45c8140659f92.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/dc6dfe16b53030f17b93bce641f02cfd.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/df53f688c929176398c114b9a9b2b903.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/1c0f3d0e888dfc347199f1fab46331f6.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/3fda73b587cffac6d43fe2bf92511b0e.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg@!water"></a></li>
+            </ul>
+        </div>
+        <div class="epetfoodblock mt30">
+            <div class="epetfood-tit ft20 c333 pb10">
+                <i class="index-ico cate_5 dib fl mr5"></i>
+                狗狗主粮
+            </div>
+            <div class="clearfix">
+                <div class="fl ad-img3 rela overflow">
+                    <a href=""><img src="./img/index_img/81382c5f5479c1fe1db45444c9b6a1b1.jpg@!water" alt="" /></a>
+                    <div class="stylebg abs overflow">
+                        <div class="hotkind clearfix c666 overflow">
+                            <span class="fl overflow">——————————————————</span>
+                            <i class="fl dib ml index-ico"></i>
+                            <b class="fl c666 ft14 mr15 dib ml5 mt5">最热HOT</b>
+                            <span class="fl overflow">——————————————————</span>
+                        </div>
+                        <ul class="clearfix kind-name mt overflow">
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">麦德琳</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">美士</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">活的益生菌</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">天然蓝氏</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">K9Natural</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">安娜玛特</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">回归原野</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">雷米高</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">95%含肉量</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fr rela epetfood-pro">
+                    <div class="lib-menu textR abs overflow">
+                        <ul class="clearfix dib ftc">
+                            <li id="one1" onmouseenter="setTab('one',1,5, 0)" class="fl bgwhite pointer hover"><div class="border-t"><span>热门</span></div></li>
+                            <li id="one2" onmouseenter="setTab('one',2,5, 7)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/7.html" class="db"><div class="border-t"><span>进口狗粮</span></div></a></li>
+                            <li id="one3" onmouseenter="setTab('one',3,5, 3555)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/3555.html" class="db"><div class="border-t"><span>国产狗粮</span></div></a></li>
+                            <li id="one4" onmouseenter="setTab('one',4,5, 78)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/78.html" class="db"><div class="border-t"><span>散装狗粮</span></div></a></li>
+                            <li id="one5" onmouseenter="setTab('one',5,5, 3554)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/3554.html" class="db"><div class="border-t"><span style="border-right: 0px;">处方狗粮</span></div></a></li>
+                        </ul>
+                    </div>
+                    <div class="lib_conbox"></div>
+                </div>
+
+            </div>
+            <ul class="clearfix brands-ul">
+                <li class="fl"><a target="_blank" href=""><img src="./img/index_img/92371ab34de0ea12b67028d6625c5180.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/18/14/aa9949e953c28d3570f45c8140659f92.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/dc6dfe16b53030f17b93bce641f02cfd.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/df53f688c929176398c114b9a9b2b903.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/1c0f3d0e888dfc347199f1fab46331f6.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/3fda73b587cffac6d43fe2bf92511b0e.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg@!water"></a></li>
+            </ul>
+        </div>
+        <div class="epetfoodblock mt30">
+            <div class="epetfood-tit ft20 c333 pb10">
+                <i class="index-ico cate_5 dib fl mr5"></i>
+                狗狗主粮
+            </div>
+            <div class="clearfix">
+                <div class="fl ad-img3 rela overflow">
+                    <a href=""><img src="./img/index_img/81382c5f5479c1fe1db45444c9b6a1b1.jpg@!water" alt="" /></a>
+                    <div class="stylebg abs overflow">
+                        <div class="hotkind clearfix c666 overflow">
+                            <span class="fl overflow">——————————————————</span>
+                            <i class="fl dib ml index-ico"></i>
+                            <b class="fl c666 ft14 mr15 dib ml5 mt5">最热HOT</b>
+                            <span class="fl overflow">——————————————————</span>
+                        </div>
+                        <ul class="clearfix kind-name mt overflow">
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">麦德琳</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">美士</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">活的益生菌</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">天然蓝氏</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">K9Natural</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">安娜玛特</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">回归原野</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">雷米高</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">95%含肉量</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fr rela epetfood-pro">
+                    <div class="lib-menu textR abs overflow">
+                        <ul class="clearfix dib ftc">
+                            <li id="one1" onmouseenter="setTab('one',1,5, 0)" class="fl bgwhite pointer hover"><div class="border-t"><span>热门</span></div></li>
+                            <li id="one2" onmouseenter="setTab('one',2,5, 7)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/7.html" class="db"><div class="border-t"><span>进口狗粮</span></div></a></li>
+                            <li id="one3" onmouseenter="setTab('one',3,5, 3555)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/3555.html" class="db"><div class="border-t"><span>国产狗粮</span></div></a></li>
+                            <li id="one4" onmouseenter="setTab('one',4,5, 78)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/78.html" class="db"><div class="border-t"><span>散装狗粮</span></div></a></li>
+                            <li id="one5" onmouseenter="setTab('one',5,5, 3554)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/3554.html" class="db"><div class="border-t"><span style="border-right: 0px;">处方狗粮</span></div></a></li>
+                        </ul>
+                    </div>
+                    <div class="lib_conbox"></div>
+                </div>
+
+            </div>
+            <ul class="clearfix brands-ul">
+                <li class="fl"><a target="_blank" href=""><img src="./img/index_img/92371ab34de0ea12b67028d6625c5180.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/18/14/aa9949e953c28d3570f45c8140659f92.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/dc6dfe16b53030f17b93bce641f02cfd.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/df53f688c929176398c114b9a9b2b903.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/1c0f3d0e888dfc347199f1fab46331f6.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/3fda73b587cffac6d43fe2bf92511b0e.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg@!water"></a></li>
+            </ul>
+        </div>
+        <div class="epetfoodblock mt30">
+            <div class="epetfood-tit ft20 c333 pb10">
+                <i class="index-ico cate_5 dib fl mr5"></i>
+                狗狗主粮
+            </div>
+            <div class="clearfix">
+                <div class="fl ad-img3 rela overflow">
+                    <a href=""><img src="./img/index_img/81382c5f5479c1fe1db45444c9b6a1b1.jpg@!water" alt="" /></a>
+                    <div class="stylebg abs overflow">
+                        <div class="hotkind clearfix c666 overflow">
+                            <span class="fl overflow">——————————————————</span>
+                            <i class="fl dib ml index-ico"></i>
+                            <b class="fl c666 ft14 mr15 dib ml5 mt5">最热HOT</b>
+                            <span class="fl overflow">——————————————————</span>
+                        </div>
+                        <ul class="clearfix kind-name mt overflow">
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">麦德琳</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">美士</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">活的益生菌</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">天然蓝氏</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">K9Natural</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">安娜玛特</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">回归原野</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">雷米高</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">95%含肉量</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fr rela epetfood-pro">
+                    <div class="lib-menu textR abs overflow">
+                        <ul class="clearfix dib ftc">
+                            <li id="one1" onmouseenter="setTab('one',1,5, 0)" class="fl bgwhite pointer hover"><div class="border-t"><span>热门</span></div></li>
+                            <li id="one2" onmouseenter="setTab('one',2,5, 7)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/7.html" class="db"><div class="border-t"><span>进口狗粮</span></div></a></li>
+                            <li id="one3" onmouseenter="setTab('one',3,5, 3555)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/3555.html" class="db"><div class="border-t"><span>国产狗粮</span></div></a></li>
+                            <li id="one4" onmouseenter="setTab('one',4,5, 78)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/78.html" class="db"><div class="border-t"><span>散装狗粮</span></div></a></li>
+                            <li id="one5" onmouseenter="setTab('one',5,5, 3554)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/3554.html" class="db"><div class="border-t"><span style="border-right: 0px;">处方狗粮</span></div></a></li>
+                        </ul>
+                    </div>
+                    <div class="lib_conbox"></div>
+                </div>
+
+            </div>
+            <ul class="clearfix brands-ul">
+                <li class="fl"><a target="_blank" href=""><img src="./img/index_img/92371ab34de0ea12b67028d6625c5180.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/18/14/aa9949e953c28d3570f45c8140659f92.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/dc6dfe16b53030f17b93bce641f02cfd.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/df53f688c929176398c114b9a9b2b903.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/1c0f3d0e888dfc347199f1fab46331f6.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/3fda73b587cffac6d43fe2bf92511b0e.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg@!water"></a></li>
+            </ul>
+        </div>
+        <div class="epetfoodblock mt30">
+            <div class="epetfood-tit ft20 c333 pb10">
+                <i class="index-ico cate_5 dib fl mr5"></i>
+                狗狗主粮
+            </div>
+            <div class="clearfix">
+                <div class="fl ad-img3 rela overflow">
+                    <a href=""><img src="./img/index_img/81382c5f5479c1fe1db45444c9b6a1b1.jpg@!water" alt="" /></a>
+                    <div class="stylebg abs overflow">
+                        <div class="hotkind clearfix c666 overflow">
+                            <span class="fl overflow">——————————————————</span>
+                            <i class="fl dib ml index-ico"></i>
+                            <b class="fl c666 ft14 mr15 dib ml5 mt5">最热HOT</b>
+                            <span class="fl overflow">——————————————————</span>
+                        </div>
+                        <ul class="clearfix kind-name mt overflow">
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">麦德琳</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">美士</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">活的益生菌</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">天然蓝氏</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">K9Natural</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">安娜玛特</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">回归原野</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">雷米高</a></li>
+                            <li class="fl ftc"><a class="bgwhite db ft12" target="_blank" href="">95%含肉量</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fr rela epetfood-pro">
+                    <div class="lib-menu textR abs overflow">
+                        <ul class="clearfix dib ftc">
+                            <li id="one1" onmouseenter="setTab('one',1,5, 0)" class="fl bgwhite pointer hover"><div class="border-t"><span>热门</span></div></li>
+                            <li id="one2" onmouseenter="setTab('one',2,5, 7)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/7.html" class="db"><div class="border-t"><span>进口狗粮</span></div></a></li>
+                            <li id="one3" onmouseenter="setTab('one',3,5, 3555)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/3555.html" class="db"><div class="border-t"><span>国产狗粮</span></div></a></li>
+                            <li id="one4" onmouseenter="setTab('one',4,5, 78)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/78.html" class="db"><div class="border-t"><span>散装狗粮</span></div></a></li>
+                            <li id="one5" onmouseenter="setTab('one',5,5, 3554)" class="fl bgwhite pointer"><a target="_blank" href="http://list.epet.com/3554.html" class="db"><div class="border-t"><span style="border-right: 0px;">处方狗粮</span></div></a></li>
+                        </ul>
+                    </div>
+                    <div class="lib_conbox"></div>
+                </div>
+
+            </div>
+            <ul class="clearfix brands-ul">
+                <li class="fl"><a target="_blank" href=""><img src="./img/index_img/92371ab34de0ea12b67028d6625c5180.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/18/14/aa9949e953c28d3570f45c8140659f92.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/dc6dfe16b53030f17b93bce641f02cfd.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/df53f688c929176398c114b9a9b2b903.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/1c0f3d0e888dfc347199f1fab46331f6.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/3fda73b587cffac6d43fe2bf92511b0e.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg@!water"></a></li>
+                <li class="fl"><a target="_blank" href=""><img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/14/c2adde2885a24e1152d744524a1d2c67.jpg@!water"></a></li>
+            </ul>
+        </div>
+            <!-- E宠头条Begin  -->
+        <div class="epet-first mt30 bgwhite">
+            <div class="ft20">E宠头条</div>
+            <div class="clearfix mt">
+            <div class="fl epet-topnew border">
+                <ul class="lh_rolladv" style="margin-top: 0px;">
+                    <li class="clearfix">
+                        <div class="fl new-img overflow">
+                            <a href=""><img width="180px" height="110px" src="//img2.epetbar.com/2017-08/25/15/2b08591615d531f3554d5a292d2699d2.jpg@!water"></a>
+                        </div>
+                        <div class="fr new-font">
+                            <h1 class="ft16 c333 clearfix">
+                                <a target="_blank" href="" class="fl dib new-tit fontover">宠物电商跨境消费获扶持 E宠国内首家宠物专属保税仓投入使用</a><a target="_blank" href=""><span class="c999 fr ft12">资讯&gt;&gt;</span></a>
+                            </h1>
+                            <p class="ft14 c999 overflow mt20">E宠商城已完成杭州跨境宠物试验基地运营筹备工作，6月18日进行部分试点发货。以后消费者在E宠商城跨境购买的产品，将直接从杭州发货到全国各地。不仅大大降低了物流时间，同时借助基地先进的管理系统，让每一件商品的厂家、代理商、成份、质保期完全透明...</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="fl new-img overflow">
+                            <a href="">
+                            <img width="180px" height="110px" src="//img2.epetbar.com/2017-08/25/14/0bc0763dcf432a00dc379d9088450632.jpg@!water"></a>
+                        </div>
+                        <div class="fr new-font">
+                            <h1 class="ft16 c333 clearfix">
+                                <a target="_blank" href="" class="fl dib new-tit fontover">宠物经济细分领域受机构青睐，E宠商城获IDG 5000万美元B轮融资 </a><a target="_blank" href="">
+                                    <span class="c999 fr ft12">资讯&gt;&gt;</span>
+                                </a>
+                            </h1>
+                            <p class="ft14 c999 overflow mt20">近日，E宠宣布已完成5000万美元B轮投资，本轮由IDG资本领投。早于2015年3月、2016年6月E宠已经获得了德同资本A轮和深创投A+轮风险融资，目前3轮累计融资额度近4.8亿元人民币。关于未来规划E宠将会把资源向品牌战略升级倾斜，朝内...</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="fl new-img overflow">
+                            <a href="">
+                            <img width="180px" height="110px" src="//img2.epetbar.com/2017-03/24/14/2f8a62eec8cf9d4295e62b7bdadb6399.jpg@!water"></a>
+                        </div>
+                        <div class="fr new-font">
+                            <h1 class="ft16 c333 clearfix">
+                                <a target="_blank" href="" class="fl dib new-tit fontover">电商玩法层出不穷 网红直播上线E宠</a>
+                                <a target="_blank" href="">
+                                    <span class="c999 fr ft12">资讯&gt;&gt;</span>
+                                </a>
+                            </h1>
+                            <p class="ft14 c999 overflow mt20">E宠商城邀请了秒拍萌宠达人“十爷”及其宠物“小阔爱”，参观位于空港大道的重庆仓库，并通过直播模式和广大消费者进行交流。</p>
+                        </div>
+                    </li>
+                    <li class="clearfix" style="border-bottom: 0px; margin-bottom: 0px;">
+                        <div class="fl new-img overflow"><a href="">   <img width="180px" height="110px" src="//img2.epetbar.com/2016-12/26/14/1b82afa9e1eea9244c541008900b7132.png@!water"></a>
+                        </div>
+                        <div class="fr new-font">
+                            <h1 class="ft16 c333 clearfix"><a target="_blank" href="" class="fl dib new-tit fontover">E宠商城与天衡宝签订协议成官网唯一中国B2C平台</a><a target="_blank" href=""><span class="c999 fr ft12">资讯&gt;&gt;</span></a></h1>
+                            <p class="ft14 c999 overflow mt20">日前，中国知名宠物电商B2C平台E宠商城与国际知名品牌天衡宝原雪山(Natural Balance)达成国际长期战略合作。E宠商城成为美国天衡宝国际战略合作伙伴，也是目前唯一一家被天衡宝全球官网收录的中国B2C平台。</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="fl new-img overflow">
+                            <a href=""><img width="180px" height="110px" src="//img2.epetbar.com/2017-03/24/14/184d7b2c809e460905711977466431ea.jpg@!water"></a>
+                        </div>
+                        <div class="fr new-font">
+                            <h1 class="ft16 c333 clearfix"><a target="_blank" href="" class="fl dib new-tit fontover">TA公益号召更多爱心人士 给流浪动物一个温暖的家</a><a target="_blank" href=""><span class="c999 fr ft12">资讯&gt;&gt;</span></a></h1>
+                            <p class="ft14 c999 overflow mt20">2017年3月12日，TA公益联合重庆猫网爱护动物保护协会举办了“带爱回家”流浪猫公益领养活动，吸引了众多民众关注。</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="fl new-img overflow">
+                            <a href="">
+                                <img width="180px" height="110px" src="//img2.epetbar.com/2017-04/06/16/0d463abd06fc9578c3e2d8650605753b.jpg@!water">
+                            </a>
+                        </div>
+                        <div class="fr new-font">
+                            <h1 class="ft16 c333 clearfix">
+                                <a target="_blank" href="http://www.epet.com/article/EPETtop/4421.html" class="fl dib new-tit fontover">20万终极大奖，携宠游天下不是梦</a>
+                                <a target="_blank" href="http://www.epet.com/article/EPETtop/4421.html">
+                                    <span class="c999 fr ft12">资讯&gt;&gt;</span>
+                                </a>
+                            </h1>
+                            <p class="ft14 c999 overflow mt20"> 带上宠物出游是怎么一种体验？你想来一次说走就走的旅行吗？只需带上你和你的宠物，其他所有一切烦心事交给我们就好。E宠“携宠去看海”20万豪华大奖让你和你的毛孩子，一起创造无限个美好的第一次。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr epet-video overflow">
+                <div class="rel">
+                    <div class="videobg">
+                        <img src="./img/index_img/videostart.jpg" alt="" />
+                    </div>
+                    <div class="video">
+                        <video src="" class="videoUrl" controls="controls" loop="loop"></video>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+            <!-- E宠头条END -->
+            <!-- E宠口碑Begin -->
+        <div class="epet-repute mt30 bgwhite">
+            <div class="ft20 rela">E宠口碑<a target="_blank" href="" class="dib repute-more"><span class="ft12 c999">更多&gt;&gt;</span></a></div>
+            <div class="repute-box mt clearfix">
+                <div class="fl repute-list">
+                    <div class="repute-scroll" id="focus001">
+                        <ul class="pic1 ttt" style="width:9180px;"></ul>
+                        <div class="btndiv">
+                            <div class="btn clearfix">
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr repute-li overflow"></div>
+            </div>
+        </div>
+            <!-- E宠口碑END -->
+        <div class="ta-welfare mt20" data-name="adoption">
+            <div class="ft20 rela">
+                TA公益
+                <a target="_blank" href="http://www.gutou.com" class="dib repute-more">
+                <span class="ft12 c999">了解TA公益&gt;&gt;</span>
+                </a>
+            </div>
+        <div class="mt borderbox">
+            <div class="ft24 bold ftc mt20">截止今日，TA公益已联合E宠商城和<span class="cfff ft30">13</span>家品牌</div>
+            <div class="ft24 bold ftc mt20">累计捐赠<strong class="ft30">956,839.54</strong>元</div>
+            <div class="ft24 bold ftc mt20">已合作<span class="ft30">7</span>家公益组织，举办参与<span class="ft30">2</span>场公益活动，助养<span class="ft30">34</span>位领养人</div>
+            <div class="business mt20">
+                <div class="ftc mt15"><img src="//static.epetbar.com/static_www/www/images/business-tit.jpg"></div>
+            </div>
+            <!--滚动 BEGIN-->
+            <div class="anli rela business-procondiv clearfix">
+                <div class="fl epet-logg"> 
+                    <div class="business-m rela">
+                        <a target="_blank" href="#">
+                            <img src="//static.epetbar.com/static_www/gutou_gy/images/epetlogo.jpg">
+                            <p class="cfff ft12 ftc">已捐助 <b class="ft16 db">￥239,236.85</b></p>
+                        </a>
+                    </div>
+                </div> 
+                <div class="business-proconli rela overflow fl">
+                    <ul class="clearfix business-scroll business-procon mt15">
+                                        <li class="fl">
+                            <div class="business-m rela">
+                                <a target="_blank" href="http://www.epet.com/brand/bd127.html">
+                                    <img src="//img2.epetbar.com/nowater/2016-08/18/16/637879a33f1ea84ccdbfa2dc1b3de16e.jpg">
+                                    <p class="cfff ft12 ftc">已捐助 <b class="ft16 db">￥161,065.02</b></p>
+                                </a>
+                            </div>
+                        </li>
+                                        <li class="fl">
+                            <div class="business-m rela">
+                                <a target="_blank" href="http://www.epet.com/brand/bd775.html">
+                                    <img src="//img2.epetbar.com/nowater/brand_logo/2017-07/14/10/86414673b92fb227bbd0d006949814ab.jpg">
+                                    <p class="cfff ft12 ftc">已捐助 <b class="ft16 db">￥146,035.32</b></p>
+                                </a>
+                            </div>
+                        </li>
+                                        <li class="fl">
+                            <div class="business-m rela">
+                                <a target="_blank" href="http://www.epet.com/brand/bd830.html">
+                                    <img src="//img2.epetbar.com/nowater/brand_logo/2015-10/17/12/d9e05c4a2d35c88ffee0dcec98fba6a4.jpg">
+                                    <p class="cfff ft12 ftc">已捐助 <b class="ft16 db">￥64,121.99</b></p>
+                                </a>
+                            </div>
+                        </li>
+                                        <li class="fl">
+                            <div class="business-m rela">
+                                <a target="_blank" href="http://www.epet.com/brand/bd17.html">
+                                    <img src="//img2.epetbar.com/nowater/2016-08/18/16/92371ab34de0ea12b67028d6625c5180.jpg">
+                                    <p class="cfff ft12 ftc">已捐助 <b class="ft16 db">￥58,263.58</b></p>
+                                </a>
+                            </div>
+                        </li>
+                                        <li class="fl">
+                            <div class="business-m rela">
+                                <a target="_blank" href="http://www.epet.com/brand/bd259.html">
+                                    <img src="//img2.epetbar.com/nowater/2016-08/18/16/c997f3ae79a7568cf7b6dde5c7b7f8b1.jpg">
+                                    <p class="cfff ft12 ftc">已捐助 <b class="ft16 db">￥51,135.75</b></p>
+                                </a>
+                            </div>
+                        </li>
+                                        <li class="fl">
+                            <div class="business-m rela">
+                                <a target="_blank" href="http://www.epet.com/brand/bd829.html">
+                                    <img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/16/276527f25e9151ef48b0b8d2dba79d29.jpg">
+                                    <p class="cfff ft12 ftc">已捐助 <b class="ft16 db">￥48,492.54</b></p>
+                                </a>
+                            </div>
+                        </li>
+                                        <li class="fl">
+                            <div class="business-m rela">
+                                <a target="_blank" href="http://www.epet.com/brand/bd318.html">
+                                    <img src="//img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f72f0855fa02052f23c3d19b22f8242c.jpg">
+                                    <p class="cfff ft12 ftc">已捐助 <b class="ft16 db">￥38,547.88</b></p>
+                                </a>
+                            </div>
+                        </li>
+                                        <li class="fl">
+                            <div class="business-m rela">
+                                <a target="_blank" href="http://www.epet.com/brand/bd235.html">
+                                    <img src="//img2.epetbar.com/nowater/brand_logo/2017-07/14/10/554b6be0390fa8c1254322d8f4af10b5.jpg">
+                                    <p class="cfff ft12 ftc">已捐助 <b class="ft16 db">￥32,749.21</b></p>
+                                </a>
+                            </div>
+                        </li>
+                                        <li class="fl">
+                            <div class="business-m rela">
+                                <a target="_blank" href="http://www.epet.com/brand/bd480.html">
+                                    <img src="//img2.epetbar.com/nowater/brand_logo/2017-02/13/12/c62b86f4f88077ce1727887f53077fb5.jpg">
+                                    <p class="cfff ft12 ftc">已捐助 <b class="ft16 db">￥31,078.61</b></p>
+                                </a>
+                            </div>
+                        </li>
+                                        <li class="fl">
+                            <div class="business-m rela">
+                                <a target="_blank" href="http://www.epet.com/brand/bd1158.html">
+                                    <img src="//img2.epetbar.com/nowater/2016-08/18/16/e3fc4e24073e3ac5b8980603463a8828.jpg">
+                                    <p class="cfff ft12 ftc">已捐助 <b class="ft16 db">￥28,296.26</b></p>
+                                </a>
+                            </div>
+                        </li>
+                                        <li class="fl">
+                            <div class="business-m rela">
+                                <a target="_blank" href="http://www.epet.com/brand/bd182.html">
+                                    <img src="//img2.epetbar.com/nowater/2016-08/19/10/fc04341d858e72a3937fd5484f4a32e8.jpg">
+                                    <p class="cfff ft12 ftc">已捐助 <b class="ft16 db">￥25,000.00</b></p>
+                                </a>
+                            </div>
+                        </li>
+                                        <li class="fl">
+                            <div class="business-m rela">
+                                <a target="_blank" href="http://www.epet.com/brand/bd71.html">
+                                    <img src="//img2.epetbar.com/nowater/brand_logo/2012-12/19/173b650c034343e5244bc8fba89704c8.jpg">
+                                    <p class="cfff ft12 ftc">已捐助 <b class="ft16 db">￥18,161.58</b></p>
+                                </a>
+                            </div>
+                        </li>
+                                        <li class="fl">
+                            <div class="business-m rela">
+                                <a target="_blank" href="http://www.epet.com/brand/bd1000.html">
+                                    <img src="//img2.epetbar.com/nowater/brand_logo/2015-08/17/10/2a7c8efcc191a03430fe2af6df594d4a.jpg">
+                                    <p class="cfff ft12 ftc">已捐助 <b class="ft16 db">￥14,654.96</b></p>
+                                </a>
+                            </div>
+                        </li>
+                                        <input class="num" type="hidden" value="0">
+                    </ul>
+                </div> 
+                <a class="businessproleft dib left_3 index-ico pointer"></a>
+                <a class="businessproright dib right_3 index-ico pointer"></a>
+            </div>
+            <!--滚动 END-->
+<!--             <div class="who-buy pad20">
+                <ul>
+                                <li class="ftc">
+                        <div class="dib clearfix">
+                            <div class="photo fl overflow mt"><img src="//img1.epetbar.com/dogs/3.jpg@!50w-c"></div>
+                            <b class="fl unerline ft14 ml5 mt15">z*******2</b>
+                            <b class="fl ft14 ml mt15">16秒前购买了</b>
+                            <div class="fl overflow proimg ml"><img src="//img1.epetbar.com/2017-04/18/8/7d728e68cb05408002d2984c5b0fda39.jpg@!50w-c"></div>
+                            <div class="fl proname unerline fontover ft14 ml mt15"><a target="_blank" href="http://item.epet.com/199002.html">丝倍亮Supercoat 丝巾 2条装</a></div>
+                            <div class="fl ml20 ft14 mt15">为流浪小动物奉献了</div>
+                            <div class="fl cred ml20 ft14 mt15">￥0.0001</div>
+                        </div>
+                    </li>
+                                <li class="ftc">
+                        <div class="dib clearfix">
+                            <div class="photo fl overflow mt"><img src="//img1.epetbar.com/dogs/3.jpg@!50w-c"></div>
+                            <b class="fl unerline ft14 ml5 mt15">z*******2</b>
+                            <b class="fl ft14 ml mt15">16秒前购买了</b>
+                            <div class="fl overflow proimg ml"><img src="//img1.epetbar.com/2017-09/04/11/a82f03d522e27d95a16497476afe6c25.jpg@!50w-c"></div>
+                            <div class="fl proname unerline fontover ft14 ml mt15"><a target="_blank" href="http://item.epet.com/211648.html">2017年《它时代》8月刊A版</a></div>
+                            <div class="fl ml20 ft14 mt15">为流浪小动物奉献了</div>
+                            <div class="fl cred ml20 ft14 mt15">￥0.0001</div>
+                        </div>
+                    </li>
+                                <li class="ftc">
+                        <div class="dib clearfix">
+                            <div class="photo fl overflow mt"><img src="//img1.epetbar.com/dogs/10.jpg@!50w-c"></div>
+                            <b class="fl unerline ft14 ml5 mt15">芭****姐</b>
+                            <b class="fl ft14 ml mt15">18秒前购买了</b>
+                            <div class="fl overflow proimg ml"><img src="//img1.epetbar.com/2017-09/04/11/a82f03d522e27d95a16497476afe6c25.jpg@!50w-c"></div>
+                            <div class="fl proname unerline fontover ft14 ml mt15"><a target="_blank" href="http://item.epet.com/211648.html">2017年《它时代》8月刊A版</a></div>
+                            <div class="fl ml20 ft14 mt15">为流浪小动物奉献了</div>
+                            <div class="fl cred ml20 ft14 mt15">￥0.0001</div>
+                        </div>
+                    </li>
+                                <li class="ftc">
+                        <div class="dib clearfix">
+                            <div class="photo fl overflow mt"><img src="//img2.epetbar.com/nowater/2015-06/06/2784b37cb4e749ad7d048fc5719baa9d.jpg@!50w-c"></div>
+                            <b class="fl unerline ft14 ml5 mt15">c***8</b>
+                            <b class="fl ft14 ml mt15">59秒前购买了</b>
+                            <div class="fl overflow proimg ml"><img src="//img1.epetbar.com/2015-11/26/14/832834279b53c1c40421034017f6d2c0.jpg@!50w-c"></div>
+                            <div class="fl proname unerline fontover ft14 ml mt15"><a target="_blank" href="http://item.epet.com/132903.html">路斯 手工坊系列 鸡肉火腿肠 200g</a></div>
+                            <div class="fl ml20 ft14 mt15">为流浪小动物奉献了</div>
+                            <div class="fl cred ml20 ft14 mt15">￥0.3016</div>
+                        </div>
+                    </li>
+                                <li class="ftc">
+                        <div class="dib clearfix">
+                            <div class="photo fl overflow mt"><img src="//img2.epetbar.com/nowater/2015-06/06/2784b37cb4e749ad7d048fc5719baa9d.jpg@!50w-c"></div>
+                            <b class="fl unerline ft14 ml5 mt15">c***8</b>
+                            <b class="fl ft14 ml mt15">59秒前购买了</b>
+                            <div class="fl overflow proimg ml"><img src="//img1.epetbar.com/2016-05/25/10/2417a83a0f2b622007bbf559bd0a4e2f.jpg@!50w-c"></div>
+                            <div class="fl proname unerline fontover ft14 ml mt15"><a target="_blank" href="http://item.epet.com/159458.html">路斯  手工坊系列 鸡肉火腿肠   1支</a></div>
+                            <div class="fl ml20 ft14 mt15">为流浪小动物奉献了</div>
+                            <div class="fl cred ml20 ft14 mt15">￥0.0950</div>
+                        </div>
+                    </li>
+                                <li class="ftc">
+                                    <div class="dib clearfix">
+                                        <div class="photo fl overflow mt"><img src="//img2.epetbar.com/nowater/2015-06/06/2784b37cb4e749ad7d048fc5719baa9d.jpg@!50w-c"></div>
+                                        <b class="fl unerline ft14 ml5 mt15">c***8</b>
+                                        <b class="fl ft14 ml mt15">59秒前购买了</b>
+                                        <div class="fl overflow proimg ml"><img src="//img1.epetbar.com/2017-09/04/11/a82f03d522e27d95a16497476afe6c25.jpg@!50w-c"></div>
+                                        <div class="fl proname unerline fontover ft14 ml mt15"><a target="_blank" href="http://item.epet.com/211648.html">2017年《它时代》8月刊A版</a></div>
+                                        <div class="fl ml20 ft14 mt15">为流浪小动物奉献了</div>
+                                        <div class="fl cred ml20 ft14 mt15">￥0.0001</div>
+                                    </div>
+                                </li>
+                </ul>
+            </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="mt30"></div>
+    <!-- 底部 -->
+    <div class="footer-content">
+        <div class="footer-top">
+            <div class="footer-imgs ct w-max">
+            <ul class="clearfix">
+            <li class="fl">
+            <a class="zp ft18" href="http://www.epet.com/zhengpin/main.html?do=newgoods#quality-brand" target="_blank">绝对的正品</a>
+            </li>
+            <li class="fl">
+            <a class="hh ft18" href="http://www.epet.com/zhengpin/main.html?do=newgoods#quality-process" target="_blank">全球的好货</a>
+            </li>
+            <li class="fl">
+            <a class="ck ft18" href="http://www.epet.com/zhengpin/main.html?do=newgoods#quality-storage" target="_blank">自家的仓库</a>
+            </li>
+            <li class="fl">
+            <a class="ps ft18" href="http://www.epet.com/zhengpin/main.html?do=newgoods#quality-express" target="_blank">自家的配送</a>
+            </li>
+            <li class="fl">
+            <a class="bs ft18" href="http://www.epet.com/zhengpin/main.html?do=newgoods#quality-family" target="_blank">养宠的帮手</a>
+            </li>
+            <li class="fl">
+            <a class="cj ft18" href="http://www.epet.com/zhengpin/main.html?do=newgoods#small-achievement" target="_blank">小小的成绩</a>
+            </li>
+            </ul>
+            </div>
+            </div>
+            <div class="footer-wrapper">
+            <div class="info clearfix">
+            <div class="footer-phone fl">
+            <img class="fl mt5 dogphone" src="//static.epetbar.com/www/newFooter/dog_phone.gif">
+            <div class="footer-number fl">
+            <h2 class="ft12 c444 bold">服务热线:</h2>
+            <p class="c666 ft20 mt20">400-888-9200<span class="ml5 ft12">(免长途费)</span></p>
+            <p class="c666 ft20 mt10">023-65584888</p>
+            <p class="c666 ft12 mt10">工作时间：09:00--21:00（周一到周日）</p>
+            </div>
+            </div>
+            <div class="pay-style fl">
+            <h2 class="ft14 c666 bold">支付方式</h2>
+            <p class="ft14 c444 mt20"><a href="http://www.epet.com/faq21.html">货到付款</a></p>
+            <p class="ft14 c444 mt5"><a href="http://www.epet.com/faq69.html">余额支付</a></p>
+            <p class="ft14 c444 mt5"><a href="http://www.epet.com/faq19.html">在线支付</a></p>
+            </div>
+            <div class="peisong-style fl">
+            <h2 class="ft14 c666 bold">配送方式</h2>
+            <p class="ft14 c444 mt20"><a href="http://www.epet.com/faq41.html">E宠快递</a></p>
+            <p class="ft14 c444 mt5"><a href="http://www.epet.com/faq23.html">外包快递</a></p>
+            <p class="ft14 c444 mt5"><a href="http://www.epet.com/faq63.html">物流运输</a></p>
+            <p class="ft14 c444 mt5"><a href="http://www.epet.com/faq11.html">公司地址</a></p>
+            </div>
+            <div class="shopping-guide fl">
+            <h2 class="ft14 c666 bold">购物指南</h2>
+            <p class="ft14 c444 mt20"><a href="http://www.epet.com/faq110.html">退换货政策</a></p>
+            <p class="ft14 c444 mt5"><a href="http://www.epet.com/faq40.html">常见问题</a></p>
+            </div>
+            <div class="about-us fl">
+            <h2 class="ft14 c666 bold">关于我们</h2>
+            <p class="ft14 c444 mt20"><a href="http://www.epet.com/article/about.html">关于我们</a></p>
+            <p class="ft14 c444 mt5"><a href="http://www.epet.com/zhengpin/main.html?do=newgoods#quality-storage">仓储中心</a></p>
+            <p class="ft14 c444 mt5"><a href="http://www.epet.com/faq1643.html?a=we">联系我们</a></p>
+            </div>
+            <div class="app-code fl">
+            <p class="ftc ft12">扫描下载APP</p>
+            <p class="ftc ft12">下单更优惠</p>
+            <a href="http://www.epet.com/app.html" target="_blank"><img src="//static.epetbar.com/www/images/dw2.png?v=10"></a>
+            </div>
+            <div class="wx-code fl">
+            <p class="ftc ft12">扫描关注E宠</p>
+            <p class="ftc ft12">商城微信</p>
+            <img src="//static.epetbar.com/www/images/app-code.jpg?v=10">
+            </div>
+            </div>
+            <div class="flink c999 rela">
+            <div class="fwrapper overflow">
+            <span class="c999 mr5">友情链接：</span>
+            <span class="brand-link">
+            <a class="c999" href="http://cat.epet.com/" target="_blank">E宠猫用品</a>
+            <a class="c999" href="http://www.gutou.com" target="_blank">骨头网</a>
+            <a class="c999" href="http://www.epet.com/brands3a1.html" target="_blank">狗粮品牌</a>
+            <a class="c999" href="http://www.epet.com/" target="_blank">宠物用品</a>
+            <a class="c999" href="http://www.cqfishing.net" target="_blank">钓鱼网</a>
+            <a class="c999" href="http://www.epet.com/goodslist/5.html" target="_blank">狗粮价格</a>
+            <a class="c999" href="http://www.dog126.com/" target="_blank">淘狗网</a>
+            <a class="c999" href="http://cq.ganji.com/chongwu/" target="_blank">重庆宠物</a>
+            <a class="c999" href="http://www.goupuzi.com/" target="_blank">宠物狗</a>
+            <a class="c999" href="http://www.51bi.com" target="_blank">淘宝返利</a>
+            <a class="c999" href="http://www.meguo.com/" target="_blank">9块9包邮</a>
+            <a class="c999" href="http://www.emeixian.com/" target="_blank"> 披萨</a>
+            <a class="c999" href="http://www.geihui.com/" target="_blank">返利网</a>
+            <a class="c999" href="http://brand.zhe800.com/" target="_blank">品牌折扣网</a>
+            <a class="c999" href="http://dalian.liebiao.com" target="_blank">大连分类信息</a>
+            <a class="c999" href="http://www.cocodiy.com" target="_blank">礼物网</a>
+            <a class="c999" href="http://www.shandongwang.cn" target="_blank">山东网</a>
+            <a class="c999" href="http://www.pintour.com" target="_blank">驴友网</a>
+            <a class="c999" href="http://news.eelly.com/" target="_blank">服装资讯</a>
+            <a class="c999" href="http://www.1zw.com" target="_blank">1折网</a>
+            <a class="c999" href="http://chengdu.anjuke.com/" target="_blank">成都房产</a>
+            <a class="c999" href="http://fanli.taofen8.com/" target="_blank">淘粉吧返利网</a>
+            <a class="c999" href="http://www.wadongxi.com " target="_blank">比价网</a>
+            <a class="c999" href="http://www.xyhuoguo.com/" target="_blank">渝味晓宇火锅</a>
+            <a class="c999" href="http://www.jutubao.com/" target="_blank">土地流转</a>
+            <a class="c999" href="http://www.hxuange.com/" target="_blank">重庆网络推广</a>
+            <a class="c999" href="http://www.cdhushi.com" target="_blank">重庆卫校</a>
+            <a class="c999" href="http://www.gzhuli.com" target="_blank">重庆卫生学校</a>
+            <a class="c999" href="http://www.liqu.com/" target="_blank">返利网</a>
+            <a class="c999" href="http://www.letao-cn.com/" target="_blank">海外代购</a>
+            <a class="c999" href="http://chongwu.huangye88.com/" target="_blank">中国宠物网</a>
+            <a class="c999" href="http://www.diaoyu.com/" target="_blank">钓鱼之家</a>
+            <a class="c999" href="http://luohanyu.cc/ " target="_blank">罗汉鱼</a>
+            <a class="c999" href="http://haishui.cc/" target="_blank">海水鱼</a>
+            <a class="c999" href="http://bj.ganji.com/chongwu/" target="_blank">北京宠物</a>
+            <a class="c999" href="http://bbs.cngui.com/" target="_blank">龟友之家</a>
+            <a class="c999" href="http://www.tjfishing.cn" target="_blank">天津钓鱼网</a>
+            <a class="c999" href="http://b2b.makepolo.com/ " target="_blank">马可波罗网</a>
+            <a class="c999" href="http://yangtai.rouding.com" target="_blank">阳台园艺</a>
+            <a class="c999" href="http://www.apetdog.com/" target="_blank">宠物店加盟</a>
+            <a class="c999" href="http://www.aigou.com/" target="_blank">爱狗网</a>
+            <a class="c999" href="http://www.514193.com/" target="_blank">兽药网</a>
+            <a class="c999" href="http://news.wbiao.cn/ " target="_blank">手表网</a>
+            </span>
+            </div>
+            <div class="click-arrow abs"><span class="footer-arrow footer-arrow-down"></span></div>
+            </div>
+            <div class="support ftc">
+            <a href="http://webscan.360.cn/index/checkwebsite?url=www.epet.com" target="_blank" title="360网站安全"><img src="//static.epetbar.com/www/newFooter/360.png" alt="360网站安全"></a>
+            <a href="https://search.szfw.org/cert/l/CX20150422007521007683" target="_blank" title="诚信网站"><img src="//static.epetbar.com/www/newFooter/chengxin.png" alt="诚信网站"></a>
+            <a href="http://si.trustutn.org/info?sn=784150413013262761226" target="_blank" title="360品牌官网"><img alt="360品牌官网" src="//static.epetbar.com/www/newFooter/shiming.png"></a>
+            <a href="http://guanjia.qq.com/online_server/result.html?url=www.epet.com" target="_blank" title="腾讯安全认证"><img src="//static.epetbar.com/www/newFooter/tx.png" alt="腾讯安全认证"></a>
+            <a href="http://www.315online.com.cn" target="_blank" title="网上交易保障中心"><img alt="网上交易保障中心" src="//static.epetbar.com/www/newFooter/jybz.png"></a>
+            <a href="http://www.cqgseb.cn/ztgsgl/WebMonitor/GUILayer/eImgMana/wzlwbayz.aspx" target="_blank" title="重庆工商"><img alt="重庆工商" src="//static.epetbar.com/www/newFooter/cqgs.png"></a>
+            <span><img src="//static.epetbar.com/www/newFooter/baiq.png" alt="2013年零售价百强企业"></span>
+            <span><img src="//static.epetbar.com/www/newFooter/wsls.png" alt="重庆网商常务理事"></span>
+            <span><img src="//static.epetbar.com/www/newFooter/sfqy.png" alt="重庆电子商务示范企业"></span>
+            <span><img src="//static.epetbar.com/www/newFooter/yxqy.png" alt="重庆优秀互联网信息服务企业"></span>
+            <span><img src="//static.epetbar.com/www/newFooter/bhdw.png" alt="小动物保护支持单位"></span>
+            <span><img src="//static.epetbar.com/www/newFooter/sjws.png" alt="重庆十佳网商第一"></span>
+            </div>
+            <div class="footer-copy">
+            <p class="ftc ft12">渝ICP备13005525号-2　渝ICP备10002905　增值电信业务经营许可证：渝B2-20140042 Copyright © 2007-2017 epet.com 　重庆易宠科技有限公司</p>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧菜单 -->
+    <div id="rtbar" style="right: 0px; top: 0px; opacity: 1;">
+        <div class="rtcont">
+            <ul class="rtcont-up" data-name="rtbar" style="height: 472px; top: 30px;">
+                <li class="rtl bagLi">
+                    <a class="rtico rt-my" href="https://my.epet.com/"> </a>
+                </li>
+
+                <li class="scart rtl">
+                    <div class="newdot"></div>
+                    <label id="lh_label_1">购物车<em>◆</em></label>
+                    <a class="rtico rt-cart" href="http://www.epet.com/cart.html">
+                        <span class="rtico rt-cart"></span>
+                        <div class="rt-cart-num">购物车<span>0</span></div>
+                    </a>
+
+                </li>
+                <li class="sconsulted rtl consolutBox">
+                        <div class="my-consoult bgwhite" style="width: 325px; height: 128px; display: none;">
+                        <div style="text-align: center;color: #000000;line-height:128px;">您还没有登录，请先<a href="https://passport.epet.com/login.html" style="text-decoration: underline;color: red;">登录</a>。</div>
+                    </div>
+                    <!--<a class="rtico rt-consulted" href="javascript:;" onclick="pub_reply('0','ask');">-->
+                 <a class="rtico rt-consulted" href="javascript:;">
+                    <span class="rtico rt-consulted"></span>
+                    <div class="rt-consulted-qus">在线客服</div>
+                </a>
+                </li>
+                <li class="rtl">
+                        <a class="rtico rt-order"></a>
+                    <div style="text-align: center;color: #000;" class="nologin-order">您还没有登录，请先<a href="https://passport.epet.com/login.html" style="text-decoration: underline;color: red;">登录</a>。</div>
+                    </li>
+
+                <li class="sview rtl">
+                    <a class="rtico rt-view"></a>
+                </li></ul>
+                <ul class="rtcont-dn" style="display: none;">
+                <li class="rtl">
+                <a class="rtico rt-weixin" href="javascript:void(0);" rel="nofollow"><span></span></a></li>
+                <li class="rtl">
+                <a class="rtico rt-weibo" href="http://weibo.com/epetbar" target="_blank" rel="nofollow"><span></span></a></li>
+                <li class="rtl">
+                <label>返回顶部<em>◆</em></label>
+                <a class="rtico rt-top" href="javascript:void(0);" style="visibility: visible;"></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/index/newsTicker.js"></script>
+    <script type="text/javascript">
+        var lh_rolladv = $('.lh_rolladv').newsTicker({
+        row_height: 131,
+        max_rows: 2,
+        duration: 4000,
+        // prevButton: $('#nt-example1-prev'),
+        // nextButton: $('#nt-example1-next')
+        });
+    </script>
 </body>
 </html>
