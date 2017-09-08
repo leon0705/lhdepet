@@ -1,0 +1,341 @@
+/* 
+* @Author: lh
+* @Date:   2017-09-08 11:20:36
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-08 21:18:25
+*/
+.goods-md-bg {
+    background: #fff;
+    min-height: 550px;
+}
+.rw400 {
+    width: 450px;
+    margin-top: 60px;
+}
+.goodslogo {
+    width: 450px;
+    height: 300px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.prelative .goodslogo {
+    z-index: 2;
+}
+#wrap {
+    margin: 0 auto;
+}
+.cloud-zoom {
+    text-align: center;
+    margin: 0 auto;
+}
+.goodslogo img {
+    max-width: 450px;
+    max-height: 300px;
+    _width: 450px;
+}
+.picroll {
+    width: 389px;
+    height: 84px;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+.picroll .back, .picroll .next {
+    width: 17px;
+    height: 72px;
+    cursor: pointer;
+    border: 1px solid #e4e4e4;
+    float: left;
+    position: relative;
+}
+.picroll p i {
+    border-style: solid solid solid dotted;
+    border-color: transparent #d7d7d7 transparent transparent;
+    border-width: 8px;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    left: -5px;
+    bottom: 28px;
+}
+.picroll div {
+    height: 74px;
+    width: 341px;
+    overflow: hidden;
+    float: left;
+    margin: 0 5px;
+    position: relative;
+}
+.picroll div ul {
+    height: 74px;
+    left: 0px;
+    width: 5000px;
+    position: absolute;
+    top: 0px;
+}
+.picroll div ul li {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 0 5px;
+    border: #ddd solid 1px;
+    padding: 1px;
+    overflow: hidden;
+}
+.picroll div ul li a.gimg {
+    width: 70px;
+    height: 70px;
+    line-height: 66px;
+    text-align: center;
+}
+.picroll div ul li a.gimg img {
+    max-width: 70px;
+    max-height: 70px;
+    _width: 70px;
+    display: inline;
+}
+.picroll .next i {
+    border-style: solid dotted solid solid;
+    border-color: transparent transparent transparent #d7d7d7;
+    bottom: 28px;
+    left: 5px;
+}
+.mousetrap {
+    position: absolute;
+    z-index: 130;
+    left: 0px;
+    top: 0px;
+}
+
+.xq-num {
+    float: left;
+    margin-left: 30.5px;
+}
+.xq-share {
+    float: right;
+    margin-right: 10px;
+}
+.pointer {
+    cursor: pointer;
+}
+.xq-share .span1 {
+    background-position: -9px -329px;
+    padding-left: 15px;
+}
+.xq-share .span2 {
+    background-position: -33px -361px;
+    padding-left: 15px;
+}
+.xqico {
+    background: url(./../img/dog_details_img/xqico.png) no-repeat;
+}
+.share-icon .share-div {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    margin-left: 2px;
+}
+.jiathis_style .button, .jiathis_style .jiathis_txt {
+    float: left;
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 18px!important;
+}
+.jiathis_style .jtico_tsina {
+    background-position: 0px -96px;
+}
+.jiathis_style .separator, .jiathis_style .jiathis_separator {
+    display: block;
+    float: left;
+    margin: 0 5px;
+    line-height: 16px!important;
+}
+.gddes {
+    width: 667px;
+    padding: 40px;
+    margin: 0 0 0 3px;
+    background: #fcfcfc;
+}
+.epet-pprice {
+    background: url(./../img/dog_details_img/price-bg.jpg) no-repeat;
+    height: 70px;
+}
+.goods-font {
+    font-size: 34px;
+}
+.gdtable {
+    border-bottom: 1px #d1d1d1 dashed;
+}
+.gdattr div.ats-style, .gdattr div.ats-style:visited {
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    border: 1px #fbfbfb solid;
+    text-decoration: none;
+}
+.gdicos span {
+    background: #ffa200;
+    border-radius: 3px;
+    padding: 4px;
+    margin-right: 4px;
+}
+.norms-con {
+    width: 457px;
+    margin-left: 5px;
+}
+.gddes .norms-con {
+    width: 589px;
+}
+.norms-con .norms-a {
+    display: inline-block;
+    border: 1px #ccc solid;
+    padding: 0 10px;
+    line-height: 12px;
+    outline: none;
+    color: #333;
+    text-decoration: none;
+    height: 24px;
+    line-height: 24px;
+    background: #fff;
+    position: relative;
+    float: left;
+    margin-right: 5px;
+    margin: 0px 5px 5px 0px;
+}
+.norms-con .cgnum {
+    display: inline-block;
+    border: #b2b2b2 solid 1px;
+}
+.norms-con .chgnum {
+    cursor: pointer;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    width: 15px;
+    display: block;
+    float: left;
+    border: #fff solid 1px;
+    background: #f3f3f3;
+    text-align: center;
+}
+.norms-con .buynum {
+    font-size: 12px;
+    width: 50px;
+    height: 32px;
+    float: left;
+    text-align: center;
+    border: #f3f3f3 solid 1px;
+    background: #fff;
+}
+.addcart-div {
+    width: 190px;
+    height: 56px;
+}
+.addcart-div a {
+    width: 100%;
+    height: 100%;
+    line-height: 56px;
+    border-radius: 3px;
+    background: #78b300;
+    cursor: pointer;
+}
+.gddes i {
+    width: 30px;
+    height: 30px;
+    background-position: -9px -387px;
+}
+.multi-tabs a {
+    display: inline-block;
+    background-color: #F7FBEC;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    border: 1px #ddd solid;
+    cursor: pointer;
+}
+.floatbar a {
+    background: #F5F5F5;
+}
+.multi-tabs a.genuine {
+    border: none;
+    margin: 0;
+    padding: 0;
+    height: 37px;
+    line-height: 37px;
+    background: #fff;
+    float: right;
+}
+.genuine .this-brand li {
+    width: 150px;
+}
+.genuine .this-brand li i {
+    width: 34px;
+    height: 38px;
+}
+.genuine .this-brand li .ico4 {
+    background-position: -153px -483px;
+    background-color: #99cb35;
+}
+.genuine .this-brand li span {
+    height: 36px;
+    width: 115px;
+    background: #fff;
+    border-radius: 0;
+    border-color: #d7d7d7;
+    line-height: 36px;
+}
+.tbrandsBox {
+    height: 100%;
+    border: 1px solid #DDDDDD;
+    height: 215px;
+    background-color: #FFF;
+}
+.this-brands {
+    margin: 5px;
+}
+.this-brands img {
+    width: 190px;
+}
+.nice-ico {
+    width: 23px;
+    height: 23px;
+    background: url(./../img/dog_details_img/zan.png) no-repeat -3px -3px;
+    margin: 7px 5px 0 5px;
+}
+.tbrands-name {width: 145px;}
+.big-brands {
+    position: absolute;
+    top: -6px;
+    left: 182px;
+    width: 980px;
+    display: none;
+    padding-left: 32px;
+    z-index: 30;
+}
+.big-brands .brandscon {
+    background: #fbfbfb;
+    position: relative;
+}
+.big-brands .bigbfl {
+    width: 200px;
+    margin-left: 57px;
+    position: absolute;
+    margin-top: -80px;
+    top: 50%;
+}
+.big-brands .bignice-ico {
+    width: 60px;
+    height: 60px;
+    background: url(./../img/dog_details_img/zan.png) no-repeat -1px -41px;
+}
+.big-brands .bigbfr {
+    width: 645px;
+    margin: 20px;
+}
+.big-brands .bigbfr img.recite_banner {
+    width: 645px;
+    max-height: 465px;
+}
+.overflow {
+    overflow: hidden;
+}

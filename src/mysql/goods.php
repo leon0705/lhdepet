@@ -15,7 +15,7 @@
 	$img = isset($_GET['img']) ? $_GET['img'] : '';
 	$c_photo = isset($_GET['c_photo']) ? $_GET['c_photo'] : '';
 
-	$sql = "select * from goodslist";
+	$sql = "select * from dog_goodlist";
 
 
 	// 获取查询结果

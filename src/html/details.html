@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>dog_details</title>
+    <link rel="stylesheet" type="text/css" href="./../css/public_a.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/details.css" />
+    <script src="./../lib/jquery-3.2.1.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="headerTop pdl40 pr100 ft12">
+        <div class="header_tl">
+            <p class="clearfix pdl40"></p>
+            <p><a href="" class="epet-index-brand">E宠首页</a></p>
+            <div class="fl place-send">送至：</div>
+            <div class="fl rela main-place-div" data-name="headerLocationPlace"></div>
+            <p></p>
+            <p><a href="" target="_blank" class="cf60 epetbrand">E宠就是正品</a></p>
+            <p><a href="">评价(<span class="cf60">578.1万</span>)</a></p>
+        </div>
+        <ul class="header_topri fr" data-name="login">
+            <li>
+                <a href="" class="cred">问题反馈</a>
+            </li>
+            <li class="mobileApp rela">
+                <i></i>
+                <a href="">手机版</a>
+                <img src="./../img/index_img/app-code.jpg" alt="" class="abs code-img hide" style="width:80px;"/>
+            </li>
+            <li class="dropmn">
+                <p class="topgz">
+                    <i></i>
+                    <span>收藏</span>
+                    <b></b>
+                </p>
+                <div class="myec_tc boxsha" style="display:none;">
+                    <a href="">我的收藏</a>
+                </div>
+            </li>
+            <li class="dropmn">
+                <i></i>
+                <p class="topgz fl">
+                    <span>
+                        <a href="">我的E宠</a>
+                    </span>
+                    <b></b>
+                </p>
+                <div class="myec_tc boxsha" style="display:none;">
+                    <a href="">我的订单</a>
+                    <a href="">VIP俱乐部</a>
+                    <a href="">充值得优惠</a>
+                </div>
+            </li>
+            <li id="cart-t">
+                <i></i>
+                <a href="">
+                    购物车(<em id="cart_num" data-name="cart_num">0</em>)
+                </a>
+            </li>
+            <li data-name="nologin">
+                <a href="./../html/epet_register.html" target="_blank">[注册]</a>
+            </li>
+            <li data-name="nologin"><a href="./../html/login.html" target="_blank">[登录]</a></li>
+        </ul>
+    </div>
+    <!-- 搜索 -->
+    <div class="head-newyear">
+        <div class="header" style="padding-top:10px;">
+            <div class="w-max ct rel">
+                <div class="logo logo-newyear fl rela">
+                    <a href="" title="E宠商城" class="lo"></a>
+                </div>
+                <form action="" method="get" id="schform" class="search fl">
+                    <ul class="sch_list hide"></ul>
+                    <div class="search-form">
+                        <input type="text" name="keywords" autocomplete="off" class="c999" lang="" value="" />
+                        <input type="hidden" name="pet_type" value="dog" />
+                        <input type="hidden" name="version" value="2.0.0" />
+                        <button value="true" type="submit">搜索</button>
+                    </div>
+                    <div class="keywords">
+                        <label>热门搜索：</label>
+                        <a href="" target="_blank" class="cred">雅思</a>
+                        <span>|</span>
+                        <a href="" target="_blank">爱丽丝</a>
+                        <span>|</span>
+                        <a href="" target="_blank">罗丽丝</a>
+                        <span>|</span>
+                        <a href="" target="_blank">菲利斯</a>
+                        <span>|</span>
+                        <a href="" target="_blank">海飞丝</a>
+                    </div>
+                </form>
+                <div class="fl phonecode catsha-tell"></div>
+                <div class="go-buy fr">
+                    <a href="" class="c666">
+                        购物车(<em data-name="cart_num">0</em>)
+                    </a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="w-max ct navBox">
+                <div class="maincates fl mchov">
+                    <div class="maincates-title">
+                        <span class="epet-type" style="">
+                            <a href="" class="petselct">狗狗<b class="cate1"></b></a>
+                        </span>
+                        <span class="hov" style="">
+                            商品分类
+                            <b class="cate2"></b>
+                        </span>
+                    </div>
+                    <div id="catefm"></div>
+                </div>
+                <ul class="menus">
+                    <li>
+                        <a target="_blank" class="mns" href="">
+                            <b></b>
+                            品牌特卖   
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./../img/index_img/new.gif" alt="" style="margin: -8px 10px 0 -25px;"/>
+                        <a href="" target="_blank" class="mns">潮品视频</a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" class="mns"><b></b>E宠课堂</a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" class="mns"><b></b>体验馆</a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" class="mns"><b></b>清仓特价</a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" class="mns">国家馆</a>
+                    </li>
+                    <li></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="w-max ct mb20">
+        <div class="all-nav mb">
+            <div class="pet-onav w-max ct">
+                <div class="onav-cont">
+                    <span class="c666">狗狗<em class="gnum">20858</em></span>
+                    <b></b>
+                    <ul>
+                        <li>
+                            <a href="">
+                            狗狗<em class="gnum">20858</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">猫猫<em class="gnum">9423</em></a>
+                        </li>
+                    </ul>
+                </div>
+                <label for=""></label>
+                <div class="onav-cont">
+                    <span class="c666">狗狗<em class="gnum">20858</em></span>
+                    <b></b>
+                    <ul>
+                        <li>
+                            <a href="">
+                            狗狗主粮<em class="gnum">1949</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            狗狗零食<em class="gnum">2651</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            狗狗日用<em class="gnum">20858</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            狗狗玩具<em class="gnum">20858</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            狗狗保健<em class="gnum">20858</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            狗狗医疗<em class="gnum">20858</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            狗狗服饰<em class="gnum">20858</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            狗狗牵引<em class="gnum">20858</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            狗狗美容<em class="gnum">20858</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            狗狗香波<em class="gnum">20858</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            狗狗书籍<em class="gnum">20858</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            狗狗周边<em class="gnum">20858</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            狗狗定制<em class="gnum">20858</em>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <label for=""></label>
+                商品详情
+            </div>
+        </div>
+        <!-- 上半部分 -->
+        <div class="goods-md-bg">
+            <div class="fl rw400 prelative gdms">
+                <div class="goodslogo rela">
+                    <div id="wrap" class="cloud-zoom-wrap" style="width:300px;margin-top:0px;">
+
+                    </div>
+                </div>
+                <div class="picroll mb">
+                    <p class="back" title="上一页"><i></i></p>
+                    <div>
+                        <ul class="oborder" style="width: 252px;">
+
+                        </ul>
+                    </div>
+                    <p class="next" title="下一页"><i></i></p>
+                </div>
+                <div class="ftc c999 mt20 pt20">
+                    <div class="xq-num dib"></div>
+                    <div class="xq-share dib">
+                        <div class="fl share-icon real pointer">
+                            <a><span class="xqico span1 mr20">分享</span></a>
+                            <div class="ct share-div hide" style="width: 250px;height: 40px;">
+                                <div class="jiathis_style">
+                                    <a class="jiathis_button_weixin" title="分享到微信"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+                                    <a class="jiathis_button_qzone" title="分享到QQ空间"><span class="jiathis_txt jtico jtico_qzone"></span></a>
+                                    <a class="jiathis_button_tsina" title="分享到微博"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+                                    <a class="jiathis_button_cqq" title="分享到QQ好友"><span class="jiathis_txt jtico jtico_cqq"></span></a>
+                                    <a class="jiathis_button_douban" title="分享到豆瓣"><span class="jiathis_txt jtico jtico_douban"></span></a>
+                                    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>     
+                        <a href="" onclick=""><span class="xqico span2 mr20">收藏商品</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="gddes fl gdms" style="padding-bottom:123px;">
+
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- 下半部分 -->
+        <div class="clearfix mt">
+            <!-- 详情内容 -->
+            <div class="w-mid fr overflow">
+                <div class="multi-tabs floatbar rela">
+                    <a class="hov tab-gd-intro bgwh">
+                        <span class="ft14">商品详情</span>
+                    </a>
+                    <a class="pointer bgwh" data-url="">
+                        <span class="ft14">参数&amp;公告</span>
+                    </a>
+                    <a class="rep pointer bgwh comment" data-url="">
+                        <span class="ft14">评价</span>
+                    </a>
+                    <a class="pointer bgwh advisory" data-url="">
+                        <span class="ft14">咨询</span>
+                    </a>
+                    <a class="pointer bgwh content-epet" data-url="">
+                        <span class="ft14">不一样的E宠</span>
+                    </a>
+                    <a class="genuine">
+                        <ul class="clearfix this-brand">
+                            <li class="fl clearfix">
+                                <i class="ico4 fl xqico db"></i>
+                                <span class="ft14 c000 fl db ftc pointer">
+                                    授权文件
+                                </span>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="multi-content">
+                    <div class="gd_details mb ft16 Detailname rela" style="display: block;"></div>
+                </div>
+            </div>
+            <div class="fl w-min">
+                <div class="mb w-min tbrandsBox">
+                    <div class="this-brands rela">
+                            <div>
+                                <img src="//img1.epetbar.com/2017-03/13/10/1c3044b71ef4d51a2017be698817af2f.jpg@!200w150h-c" class="recite_banner">
+                            </div>
+                            <div class="clearfix mt15 mb15">
+                                <div class="fl nice-ico"></div>
+                                <div class="fl tbrands-name">
+                                    <div class="ft12">冠能</div>
+                                    <div class="ft14 c333 bold">支持E宠，支持正品</div>
+                                </div>
+                            </div>
+                            <div class="big-brands">
+                                <div class="clearfix brandscon">
+                                    <div class="fl bigbfl ftc">
+                                        <div class="bignice-ico ct mb"></div>
+                                        <div class="ft16">冠能</div>
+                                        <div class="ft18 c333 bold">支持E宠，支持正品</div>
+                                    </div>
+                                    <div class="fr bigbfr">
+                                        <img src="./../img/dog_details_img/1c3044b71ef4d51a2017be698817af2f.jpg@!water">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./../js/details/details.js"></script>
+</body>
+</html>

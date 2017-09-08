@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-07 17:32:29
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-07 20:11:06
+* @Last Modified time: 2017-09-08 14:01:28
 */
 document.addEventListener('DOMContentLoaded',function(){
     var glist1 = document.querySelector('.glist1');
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded',function(){
                         </div>
                         <div class="fmgoods-main gimgsrl" >
                         </div>
-                        <a class="gtitle" target="_blank" title="${item.title}">
+                        <a href="./details.html?gid=${item.gid}" class="gtitle" target="_blank" title="${item.title}">
                             <span class="title-typename tit-label ft12 hide" style="display:none"></span>
                             <span class="title-subject">${item.subject}</span>
                         </a>
