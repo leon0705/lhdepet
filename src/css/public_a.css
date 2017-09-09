@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-07 09:11:25
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-08 20:24:23
+* @Last Modified time: 2017-09-09 17:31:40
 */
 *{
     margin: 0;
@@ -60,6 +60,9 @@ a:link,a:visited{outline:0;}
 .nav {background: #fff;padding-top: 10px;border-bottom: #357e34 solid 2px;}
 .ftleft {text-align: left;}
 .box {height: 100%;border: 1px solid #DDD;background-color: #FFF;overflow: hidden;}
+.citys {width: 370px;display: inline-block;border: 1px solid #ddd;padding: 5px 5px 15px;position: relative;}
+.place-div .place-header {width: 100%;height: 25px;display: inline-block;border-bottom: 1px solid #ddd;padding: 0;margin: 0;}
+.place-div .place-header li {background: #f6f6f6;border-right: 1px solid #ddd;border-left: 1px solid #ddd;border-top: 1px solid #ddd;display: inline-block;line-height: 24px;font-size: 12px;color: #888;width: 70px;text-align: center;cursor: pointer;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 .bold {font-weight: 700;}
 .borcol {border: 1px solid #ddd;}
 .border {border: 1px solid #e7e7e7;}
@@ -83,6 +86,7 @@ a:link,a:visited{outline:0;}
 .c444{color:#444;}
 .ce54649 {color: #e54649;}
 .c78b300 {color: #78b300;}
+.c89{color:#898989;}
 .cfff {color:#fff;}
 .c999{color:#999;}
 .c666{color:#666;}
@@ -93,15 +97,20 @@ a:link,a:visited{outline:0;}
 .pad10{padding:10px;}
 .pad20{padding:10px;}
 .pt20{padding-top:20px;}
+.pt30{padding-top:30px;}
+.pb10 {padding-bottom: 10px;}
+.pl10 {padding-left: 10px;}
 .pr35{padding-right:35px;}
 .pr70{padding-right:70px;}
 .pr100{padding-right:100px;}
+.ml{margin-left:10px;}
 .mt5 {margin-top: 5px;}
 .mt, .mtop10 {margin-top: 10px;}
 .mb{margin-bottom:10px;}
 .mt15{margin-top:15px;}
 .mb20{margin-bottom:20px;}
 .mr20{margin-right:20px;}
+.ml25 {margin-left: 25px;}
 .ml5 {margin-left: 5px;}
 .mr5 {margin-right: 5px;}
 .mr{margin-right:10px;}
@@ -109,7 +118,6 @@ a:link,a:visited{outline:0;}
 .ml20 {margin-left: 20px;}
 .mt20,.mtop20{margin-top:20px;}
 .mt30{margin-top:30px;}
-.pb10 {padding-bottom: 10px;}
 .textR {text-align: right;}
 .through {text-decoration: line-through;}
 .price {font-weight: 700;color: #F60;}
@@ -120,6 +128,7 @@ a:link,a:visited{outline:0;}
 .abs{position:absolute;}
 .pdl40{padding-left:40px;}
 .hide,.shide{display:none;}
+.place-hide {margin-top: -2px;position: absolute;z-index: 20000;top: 33px;left: 0;background: transparent;line-height: 15px;min-height: 270px;}
 .clearfix::after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 .overflow {overflow: hidden;_zoom: 1;}
 .bgwhite, .tancbox, .probox, .header, .catgr_ej, .zhis {background: #fff;}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>cart</title>
+    <link rel="stylesheet" type="text/css" href="./../css/public_a.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/cart.css" />
+    <script src="./../lib/jquery-3.2.1.js"></script>
+    <script src="./../js/details/cart.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="headerTop pdl40 pr100 ft12">
+        <div class="header_tl">
+            <p class="clearfix pdl40"></p>
+            <p><a href="" class="epet-index-brand">E宠首页</a></p>
+            <div class="fl place-send">送至：</div>
+            <div class="fl rela main-place-div" data-name="headerLocationPlace"></div>
+            <p></p>
+            <p><a href="" target="_blank" class="cf60 epetbrand">E宠就是正品</a></p>
+            <p><a href="">评价(<span class="cf60">578.1万</span>)</a></p>
+        </div>
+        <ul class="header_topri fr" data-name="login">
+            <li>
+                <a href="" class="cred">问题反馈</a>
+            </li>
+            <li class="mobileApp rela">
+                <i></i>
+                <a href="">手机版</a>
+                <img src="./../img/index_img/app-code.jpg" alt="" class="abs code-img hide" style="width:80px;"/>
+            </li>
+            <li class="dropmn">
+                <p class="topgz">
+                    <i></i>
+                    <span>收藏</span>
+                    <b></b>
+                </p>
+                <div class="myec_tc boxsha" style="display:none;">
+                    <a href="">我的收藏</a>
+                </div>
+            </li>
+            <li class="dropmn">
+                <i></i>
+                <p class="topgz fl">
+                    <span>
+                        <a href="">我的E宠</a>
+                    </span>
+                    <b></b>
+                </p>
+                <div class="myec_tc boxsha" style="display:none;">
+                    <a href="">我的订单</a>
+                    <a href="">VIP俱乐部</a>
+                    <a href="">充值得优惠</a>
+                </div>
+            </li>
+            <li id="cart-t">
+                <i></i>
+                <a href="">
+                    购物车(<em id="cart_num" data-name="cart_num">0</em>)
+                </a>
+            </li>
+            <li data-name="nologin">
+                <a href="./../html/epet_register.html" target="_blank">[注册]</a>
+            </li>
+            <li data-name="nologin"><a href="./../html/login.html" target="_blank">[登录]</a></li>
+        </ul>
+    </div>
+    <!-- 购物车 -->
+    <div class="w-max ct" style="margin-top:50px;">
+        <div class="cart-top" style="width:1200px;height:63px;">
+            <div class="cart-logo fl">
+                <a href="">
+                    <img src="./../img/cart_img/cart-logo.png" alt="" />
+                </a>
+            </div>
+            <div class="page-name c333 fl ml">购物车</div>
+            <form action="" method="get" target="_blank" id="schform">
+                <div class="cart-search fr overflow clearfix mt20">
+                    <ul class="sch_list hide">
+                    </ul>
+                    <input type="text" name="keyword" class="search-text bgwhite fl" autocomplete="off">
+                    <input name="pet_type" type="hidden" value="dog">
+                    <a href="javascript:void(0);" onclick="$('#schbutton').trigger('click');" class="cfff fr ftc">搜索</a>
+                    <button class="shide" id="schbutton" value="true" type="submit"></button>
+                </div>
+            </form>
+        </div>
+        <div class="select-menu rela">
+            <div id="cart-menu">
+                <ul class="cart-menu clearfix nav-menu">
+                    <li id="one1" onclick="Epet.Cart.Submit.showCart();" class="current">购物车
+                        <em data-name="cart_num" class="fcolor ml5">1</em>
+                    </li>
+                    <li id="one2" onclick="Epet.Cart.Submit.showFavors();">我的收藏
+                        <em class="fcolor ml5">?</em>
+                    </li>
+                    <li id="one3" onclick="Epet.Cart.Submit.showBought();">我购买过
+                        <em class="fcolor ml5">?</em>
+                    </li>
+                    <li id="one4" onclick="Epet.Cart.Submit.showViewed();">最近浏览
+                        <em class="fcolor ml5">0</em>
+                    </li>
+                </ul>
+                <div class="nav-currentt" style="width: 122px; left: 0px; overflow: hidden;">
+                    <div class="arrow ftc"><i></i></div>
+                </div>
+            </div>
+            <div class="cart-sentcity"></div>
+            <div class="contentbox">
+                <div id="con_one_1">
+                    <table cellpadding="0" cellspacing="0" class="cart-table mt" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td colspan="5" class="pt30 pl10 pb10">
+                                    <label>
+                                        <input autocomplete="off" type="checkbox" name="check_order_1" class="fl mt5" doclick="check">
+                                    </label>
+                                    <span class="cfff epetfh fl ml5">西部大仓</span>
+                                    <b class="fl mt5 ml rela pointer">
+                                        <img src="//static.epetbar.com/www/cart/help.jpg">
+                                        <div class="cart-tc bgwhite">
+                                            <em></em>
+                                            <i></i>
+                                            <p class="c333 ft12">以下商品由西部大仓发货，全国满99元包邮，部分地区满58元包邮，支持余额支付、货到付款、在线支付!</p>
+                                        </div>
+                                    </b>
+                                    <div class="baoyou-tip ymbaoyou-tip fl ml25 mt5 c666 baoyou-tip1">
+                                        
+                                    </div>
+                                    <div class="clear"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody class="tbd">
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td colspan="5" class="pt30 pb10">
+                                    <div class="balance">
+                                        <div class="w-max ct">
+                                            <div class="fl c333 pl10">
+                                                <label class="mr20">
+                                                    <input autocomplete="off" type="checkbox" class="all-checkbox" name="check_all_" doclick="check">全选
+                                                </label>
+                                                <a href="javascript:;" doclick="deleteSelected" class="c333">[ 删除选中商品 ]</a>
+                                                <a href="javascript:;" doclick="favorSelected" class="c333 ml5">[ 收藏选中商品 ]</a>
+                                                <a href="javascript:;" doclick="deleteAllInvalidGoods" class="c333 ml5">[ 删除失效商品 ]</a>
+                                            </div>
+                                            <div class="fr cart-price">
+                                                总价（不含运费）:<strong class="ft18"></strong>
+                                                <a class="cfff epet_sensor_settlement go-balance ftc bold ft18 ml20 bggreen">去结算(4)</a>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧菜单 -->
+    <div id="rtbar" style="right: 0px;top: 0px;opacity: 1;">
+        <div class="rtcont">
+            <ul class="rtcont-up" data-name="rtbar" style="height: 472px; top: 30px;">
+                <li class="rtl bagLi">
+                    <div class="bagBox" style="display: none;">
+                        <div style="text-align: center;color: #000;padding: 50px 0;">您还没有登录，请先
+                            <a href="https://passport.epet.com/login.html" style="text-decoration: underline;color: red;">登录</a>。
+                        </div>
+                    </div>
+                    <a class="rtico rt-my" href="https://my.epet.com/"></a>
+                </li>
+
+                <li class="scart rtl">
+                    <div class="newdot"></div>
+                    <label>购物车<em>◆</em></label>
+                    <a class="rtico rt-cart" href="http://www.epet.com/cart.html">
+                        <span class="rtico rt-cart"></span>
+                        <div class="rt-cart-num">购物车<span>0</span></div>
+                    </a>
+                </li>
+                <li class="sconsulted rtl consolutBox">
+                    <div class="my-consoult bgwhite" style="width:325px;height:128px;">
+                        <div style="text-align: center;color: #000000;line-height:128px;">您还没有登录，请先
+                            <a href="https://passport.epet.com/login.html" style="text-decoration: underline;color: red;">登录</a>。
+                        </div>
+                    </div>
+                <!--<a class="rtico rt-consulted" href="javascript:;" onclick="pub_reply('0','ask');">-->
+                    <a class="rtico rt-consulted" href="javascript:;">
+                        <span class="rtico rt-consulted"></span>
+                        <div class="rt-consulted-qus">在线客服</div>
+                    </a>
+                </li>
+                <li class="rtl">
+                    <a class="rtico rt-order"></a>
+                    <div style="text-align: center;color: #000;" class="nologin-order">您还没有登录，请先
+                        <a href="https://passport.epet.com/login.html" style="text-decoration: underline;color: red;">登录</a>。
+                    </div>
+                </li>
+                <li class="sview rtl">
+                    <a class="rtico rt-view"></a>
+                </li>
+            </ul>
+            <ul class="rtcont-dn" style="display: none;">
+                <li class="rtl">
+                    <a class="rtico rt-weixin"  href="" rel="nofollow">
+                        <span></span>
+                    </a>
+                </li>
+                <li class="rtl">
+                    <a class="rtico rt-weibo"  href="" target="_blank" rel="nofollow">
+                        <span></span>
+                    </a>
+                </li>
+                <li class="rtl">
+                    <label>返回顶部<em>◆</em></label>
+                    <a class="rtico rt-top" href="" style="visibility: visible;"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

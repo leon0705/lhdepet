@@ -3,13 +3,13 @@
  * @Author: Marte
  * @Date:   2017-09-08 10:57:32
  * @Last Modified by:   Marte
- * @Last Modified time: 2017-09-08 11:01:05
+ * @Last Modified time: 2017-09-09 17:01:31
  */
     include 'connect.php';
     
     $market = isset($_GET['market']) ? $_GET['market'] : '';
     $price = isset($_GET['price']) ? $_GET['price'] : '';
-    // $dprice = isset($_GET['dprice']) ? $_GET['dprice'] : '';
+    $dprice = isset($_GET['dprice']) ? $_GET['dprice'] : '';
     $gid = isset($_GET['gid']) ? $_GET['gid'] : '';
     $subject = isset($_GET['subject']) ? $_GET['subject'] : '';
     $title = isset($_GET['title']) ? $_GET['title'] : '';
