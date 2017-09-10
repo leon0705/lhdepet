@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./../css/public_a.css" />
     <link rel="stylesheet" type="text/css" href="./../css/cart.css" />
     <script src="./../lib/jquery-3.2.1.js"></script>
+    <script src="./../js/com.js"></script>
     <script src="./../js/details/cart.js"></script>
 </head>
 <body>
@@ -89,7 +90,7 @@
             <div id="cart-menu">
                 <ul class="cart-menu clearfix nav-menu">
                     <li id="one1" onclick="Epet.Cart.Submit.showCart();" class="current">购物车
-                        <em data-name="cart_num" class="fcolor ml5">1</em>
+                        <em data-name="cart_num" class="fcolor ml5"></em>
                     </li>
                     <li id="one2" onclick="Epet.Cart.Submit.showFavors();">我的收藏
                         <em class="fcolor ml5">?</em>
@@ -101,9 +102,9 @@
                         <em class="fcolor ml5">0</em>
                     </li>
                 </ul>
-                <div class="nav-currentt" style="width: 122px; left: 0px; overflow: hidden;">
+<!--                 <div class="nav-currentt" style="width: 122px; left: 0px; overflow: hidden;">
                     <div class="arrow ftc"><i></i></div>
-                </div>
+                </div> -->
             </div>
             <div class="cart-sentcity"></div>
             <div class="contentbox">
@@ -148,7 +149,7 @@
                                             </div>
                                             <div class="fr cart-price">
                                                 总价（不含运费）:<strong class="ft18"></strong>
-                                                <a class="cfff epet_sensor_settlement go-balance ftc bold ft18 ml20 bggreen">去结算(4)</a>
+                                                <a class="cfff epet_sensor_settlement go-balance ftc bold ft18 ml20 bggreen">去结算</a>
                                             </div>
                                             <div class="clear"></div>
                                         </div>

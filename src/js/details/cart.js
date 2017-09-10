@@ -2,11 +2,12 @@
 * @Author: Marte
 * @Date:   2017-09-09 15:14:24
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-09 17:40:34
+* @Last Modified time: 2017-09-10 16:05:09
 */
 
 window.onload = function(){
     var tbd = document.querySelector('.tbd');
+    console.log(tbd)
     var cookies = document.cookie;
     // var cart_table = document.querySelector('.cart-table');
     var arr_goods = [];
@@ -22,44 +23,39 @@ window.onload = function(){
         })
     }
 
-    render()
+    render();
+
     // 事件委托实现删除单个商品效果
-    // * 删除cookie中对应的商品数据
-    // * 删除对应DOM节点
-    // tbody.onclick = function(e){
-    //     e = e || window.event;
-    //     var target = e.target || e.srcElement;
+    tbd.onclick = function(e){
 
+        e = e || window.event;
+        var target = e.target || e.srcElement;
 
-    //     if(target.gid === '${item.GUID}'){
-    //         // 获取当前li
-    //         var currentLi = target.parentNode;
+        // 是否点击了删除按钮
+        if(target.id === 'cart_del'){
+            var currentTd = target.parentElement;
+            console.log(currentTd)
+            var currentTr = currentTd.parentElement;
+            console.log(currentTr)
+            // 获取当前guid
+            var currentGUID = target.getAttribute('gid');
+            console.log(currentGUID)
 
-    //         var guid = currentLi.getAttribute('data-guid');
-
-    //         // 删除DOM
-    //         // currentLi.parentNode.removeChild(currentLi);
-
-
-    //         // 删除cookie
-    //         // 1）先找到cookie中对应的数据，并删除它
-    //         // 2）重写cookie
-    //         cartlist.forEach(function(item,idx){
-    //             if(item.guid === guid){
-    //                 cartlist.splice(idx,1);
-    //             }
-    //         });
-
-    //         var now = new Date();
-    //         now.setDate(now.getDate()+8);
-    //         Cookie.set('cartlist',JSON.stringify(cartlist),now);
-
-    //         render();
-    //     }
-    // }
+            arr_goods.forEach(function(item,idx){
+                if(item.GUID === currentGUID){
+                    arr_goods.splice(idx,1);
+                }
+            });
+            var now = new Date();
+            now.setDate(now.getDate()+8);
+            // 设置过期时间
+            Cookie.set('cartlist',JSON.stringify(arr_goods),now);
+            // 调用common封装函数
+            render();
+        }
+    }
 
     function render(){
-
 
         tbd.innerHTML = arr_goods.map(function(item){
             return `
@@ -94,16 +90,12 @@ window.onload = function(){
                 </td>
                 <td width="200" align="center">
                     <a class="c666">[收藏]</a>
-                    <a gid="${item.GUID}" class="c666">[删除]</a>
+                    <a gid="${item.GUID}" id="cart_del" class="c666">[删除]</a>
                 </td>
             </tr>
             `
         }).join('');
-
     }
 
-
 console.log(arr_goods);
-// render()
-
 }

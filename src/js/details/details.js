@@ -2,9 +2,10 @@
 * @Author: Marte
 * @Date:   2017-09-08 11:29:30
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-09 17:00:09
+* @Last Modified time: 2017-09-10 18:18:18
 */
 document.addEventListener('DOMContentLoaded',()=>{
+    var zoom1 = document.querySelector('#zoom1');
     //获取url中的参数
     function getUrlParam(name) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
@@ -26,13 +27,11 @@ document.addEventListener('DOMContentLoaded',()=>{
              if(id == val.gid){
                 var wrap_img='';
                 wrap_img+=[
-                '<a id="zoom1" class="cloud-zoom" style="z-index:0;position:relative;display:block; ">',
-                    '<img alt="'+val.gid+'" src="'+val.img+'"/>',
-                '</a>',
-                '<div class="mousetrap" style="width: 300px; height: 300px; cursor: move;">',
-                '</div>',
-                '<div class="mousetrap" style="width: 300px; height: 300px; cursor: move;">',
-                '</div>'
+                    '<div id="zoom1" class="bigPic lxzoom" >',
+                        '<img alt="'+val.gid+'" src="'+val.img+'" data-big="./../img/dog_list_img/9acc9283661945ca171304a5471ce16b.jpg@!water"/>',
+                    '</div>',
+                    '<div id="ShowBigPictureBox" style=" position:absolute; overflow:hidden; display:none; border:3px solid #ccc; padding:5px; background-repeat:no-repeat; background-color:#fff; width:300px; height:300px;">',
+                    '</div>',
                 ].join('');
 
                 var oborder_img='';
@@ -189,7 +188,60 @@ document.addEventListener('DOMContentLoaded',()=>{
           doAfterLoad();
      }
     })
-    
+    // function magnifier(){
+    //     $.fn.JNMagnifier=function(setting){
+        
+    //         if(setting&&setting.renderTo){
+    //             if(typeof(setting.renderTo)=="string"){
+    //                 setting.renderTo = $(setting.renderTo);
+    //             }
+    //         }else{
+    //             return;
+    //         }
+    //         var _img_org_ = this.children("img");
+    //         _img_org_.css("cursor","pointer");
+
+    //         var __w = 0;
+    //         var __h = 0;
+            
+    //         var __left = this.offset().left;
+    //         var __top = this.offset().top;
+            
+    //         if(this.offsetParent())
+    //         {
+    //             __left+=this.offsetParent().offset().left;
+    //             __top+=this.offsetParent().offset().top;
+    //         }
+
+    //         var _move_x = 0;
+    //         var _move_y = 0;
+            
+    //         var _val_w = (setting.renderTo.width() / 2);
+    //         var _val_h = (setting.renderTo.height() / 2);
+
+    //         _img_org_.mouseover(function(){
+    //             setting.renderTo.html('<img src="' + _img_org_.attr("src") + '" style="position:absolute;" id="JNMagnifierrenderToImg" />');
+    //             setting.renderTo.show();
+    //             var timer = setInterval(function(){
+    //                 __w = $("#JNMagnifierrenderToImg").width() / _img_org_.width();
+    //                 __h = $("#JNMagnifierrenderToImg").height() /_img_org_.height();
+    //                 if(__w>0){
+    //                     clearInterval(timer);
+    //                 }
+    //             },100);
+    //         });
+            
+    //         _img_org_.mouseout(function(){
+    //             setting.renderTo.hide();
+    //         });
+            
+    //         _img_org_.mousemove(function(e){
+    //             _move_x =0-Math.round((document.documentElement.scrollLeft+e.clientX-__left) * __w - _val_w);
+    //             _move_y =0-Math.round((document.documentElement.scrollTop+e.clientY-__top) * __h - _val_h);
+    //             $("#JNMagnifierrenderToImg").css({"left":_move_x + "px ","top":_move_y + "px"});
+    //         });
+    //     }
+    // }
     function doAfterLoad(){
         var epet_sensor_add_cart = document.getElementById('epet_sensor_add_cart');
         var cart_buynum = document.getElementById('cart_buynum').value;

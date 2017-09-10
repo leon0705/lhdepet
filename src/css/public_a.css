@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-07 09:11:25
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-09 17:31:40
+* @Last Modified time: 2017-09-10 15:27:22
 */
 *{
     margin: 0;
@@ -49,10 +49,10 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
     padding: 0 23px 0 18px;
     line-height: 53px;
     cursor: pointer;
-    background: url(./../img/dog_list_img/paixu-ico.png) no-repeat;
+    /*background: url(./../img/dog_list_img/paixu-ico.png) no-repeat;*/
 }
 .paixufl span.pxpricedown:hover, .paixufl span.pxpricedown.current {
-    background: url(./../img/dog_list_img/paixu-ico.png) no-repeat -30px -230px #53aa5b;
+    /*background: url(./../img/dog_list_img/paixu-ico.png) no-repeat -30px -230px #53aa5b;*/
 }
 a.btn, a.btn span, .sbtn, .subbtn, .subbtn span, .sbtn span, .smbtn, .smbtn span, a.ahov, a.ahov span, .filter_box td a:hover, .filter_box td a:hover span {background-image: url(./../img/dog_list_img/newbtn.png);background-repeat: no-repeat;}
 .btn, .sbtn, .smbtn, .subbtn {line-height: 28px;display: inline-block;background-position: right 0;padding-right: 10px;height: 28px;cursor: pointer;vertical-align: middle;}
@@ -426,3 +426,28 @@ li.gdlis p em.lis_icon, .list_box-li p em.lis_icon {background-position: 0 -172p
 .onav-cont ul {position: absolute;top: 24px;left: -1px;width: 100%;border: 1px solid #ddd;background: #fff;padding: 5px 0;display: none;z-index: 150;}
 .onav-cont li {line-height: 22px;height: 22px;overflow: hidden;text-indent: 18px;border-bottom: 1px dashed #eee;}
 .pet-onav label {display: inline-block;background: url(./../img/index_img/bg2.png) -38px -1265px;width: 5px;height: 9px;margin: 0 10px;}
+
+/*page*/
+.pages {
+    clear: both;
+    color: #999;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pages strong, .pages a:hover, .pages a:active {
+    background-color: #F90;
+    border: 1px #F90 solid;
+    color: #FFF;
+    font-weight: 700;
+}
+.pages a, .pages a:visited, .pages strong {
+    border: 1px solid #ddd;
+    margin: 2px;
+    text-decoration: none;
+    padding: 0 15px;
+    line-height: 30px;
+    height: 30px;
+    background-color: #FFF;
+    display: inline-block;
+}
